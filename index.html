@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кино</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__content">
+                <div class="header__icons-main">
+                    <a class="logo" href="#">
+                        <img src="Images/header/logo.svg" alt="logo">
+                    </a>
+                    <button class="burger"></button>
+                </div>
+                <div class="header__icons">
+                    <button class="heart"></button>
+                    <button class="search"></button>
+                    <button class="user"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page">
+
+        <section class="page__hero hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__content-main main-content">
+                        <div class="main-content__age">
+                            <img src="Images/hero/18+.svg" alt="18+">
+                        </div>
+                        <div class="main-content__name">Сияние</div>
+
+                        <div class="main-content__1">
+                            <div class="main-content__year">1980</div>
+                            <div class="main-content__director">Стэнли Кубрик</div>
+                        </div>
+                        <div class="main-content__2">
+                            <div class="main-content__rate">7.8</div>
+                            <div class="main-content__number">189K</div>
+                        </div>
+                    </div>
+                    <picture class="hero__content-image">
+                        <source srcset="Images/hero/hero-img.webp" type="image/webp">
+                        <img srcset="
+                        Images/hero/1736x1082.png 2x,
+                        Images/hero/320x250.png 320w,
+                        Images/hero/500x350.png 500w
+                        "
+                        sizes="(max-width: 1000px) 500px, (max-width: 500px) 320px, 100vw"
+                        src="Images/hero/868x541.png" alt="main_picture">
+                    </picture>
+                    <div class="hero__content-ticket ticket">
+                        <a class="ticket__link" href="">Купить билет</a>
+                    </div>
+
+                    <div class="hero__content-descr descr-content">
+                        <div class="descr-content__premiere">Снова в кино с 30 июля </div>
+                        <p class="descr-content__info">Писатель приезжает с семьей в загадочный отель. Противоречивый
+                            триллер
+                            Стэнли
+                            Кубрика по роману Стивена Кинга</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <img src="Images/about/about-img.jpg" alt="кадр из фильма">
+                <h3 class="title about__title">
+                    <span class="about__title-line">История горе-писателя Джека Торренса,</span> смотрителя отеля
+                    «Оверлук»,
+                    оставшегося в нем на зиму с семьей
+                    и тронувшегося рассудком, основана на бестселлере Стивена Кинга, но существенно от него отличается.
+                </h3>
+                <p class="about__subtitle">
+                    Писатель был очень недоволен обращением с книгой, что не помешало картине вызвать восторг критиков и
+                    зрителей. Стэнли Кубрик хотел снять самый страшный фильм на свете, и именно это у него и получилось,
+                    несмотря на полное пренебрежение канонами жанра. Вместо мрака и темных углов здесь много света и
+                    открытого
+                    пространства, а призраки можно толковать не как мистические эманации, а как фантомы пошатнувшегося
+                    разума
+                    героя Джека Николсона. Кстати, режиссер доводил его до раздерганного состояния путем бесконечного
+                    повторения
+                    каждой сцены – получился очень убедительный безумец с топором.
+                </p>
+                <div class="about__content">
+                    <div class="about__trailer trailer">
+                        <div class="trailer__video-1">
+                            <iframe src="https://www.youtube.com/embed/5GAqSMT3iR8" width="240"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h4 class="title trailer__title">Трейлер ре-релиза фильма</h4>
+                            <div class="trailer__info">1:52</div>
+                        </div>
+
+                        <div class="trailer__video-2">
+                            <iframe src="https://www.youtube.com/embed/NMSUEhDWXH0" width="240"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h4 class="trailer__title">Трейлер ре-релиза фильма</h4>
+                            <div class="trailer__info">1:49</div>
+                        </div>
+
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Год производства</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">1980</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Страна</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">США</a>,
+                                <a class="item-about__link">Великобритания</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Жанр</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">ужасы</a>,
+                                <a class="item-about__link">триллер</a>,
+                                <a class="item-about__link">драма</a>,
+                                <a class="item-about__link">детектив</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Слоган</div>
+                            <div class="item-about__descr">«The Horror is driving him crazy»</div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Режиссер</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Стэнли Кубрик</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Сценарий</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Стэнли Кубрик</a>,
+                                <a class="item-about__link">Дайан Джонсон</a>,
+                                <a class="item-about__link">Стивен Кинг</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Продюсер</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Роберт Фрайер</a>,
+                                <a class="item-about__link">Ян Харлан</a>,
+                                <a class="item-about__link">Мэри Лиа Джонсон</a>,
+                                <a class="item-about__link">...</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Оператор</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Джон Олкотт</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Композитор</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Уэнди Карлос</a>,
+                                <a class="item-about__link">Рэйчел Элкинд</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Художник</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Рой Уолкер</a>,
+                                <a class="item-about__link">Лесли Томкинс</a>,
+                                <a class="item-about__link">Милена Канонеро</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Монтаж</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">Рэй Лавджой</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Бюджет</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">$19 000 000</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Сборы в США</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">$44 017 3740</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Сборы в мире</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">+ $18 376 = $44 035 750</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Сборы в России</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">$145 815</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Премьера в Росcии</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">29 октября 2020</a>,
+                                <a class="item-about__link">«Иноекино»</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Премьера в мире</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link">23 мая 1980</a>,
+                                <a class="item-about__link">...</a>
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Релиз на DVD</div>
+                            <div class="item-about__descr">25 декабря 2001, «Мост-Видео»</div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Возраст</div>
+                            <div class="item-about__descr">18+</div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Рейтинг MPAA</div>
+                            <div class="item-about__descr">R
+                            </div>
+                        </li>
+                        <li class="about__item item-about">
+                            <div class="item-about__title">Время</div>
+                            <div class="item-about__descr">144 мин. / 02:24</div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="index">
+            <div class="container">
+                <ul class="index__list">
+
+                    <li class="index__item item-menu item-menu-1">
+                        <button>
+                            <div class="item-menu__number">01</div>
+                            <h3 class="title item-menu__title">В главных ролях</h3>
+                        </button>
+                    </li>
+                    <li class="index__item item-menu item-menu-2">
+                        <div class="item-menu__number">02</div>
+                        <h3 class="title item-menu__title">Изображения</h3>
+                    </li>
+                    <li class="index__item item-menu item-menu-3">
+                        <div class="item-menu__number">03</div>
+                        <h3 class="title item-menu__title">Расписание</h3>
+                    </li>
+                    <li class="index__item item-menu item-menu-4">
+                        <div class="item-menu__number">04</div>
+                        <h3 class="title item-menu__title">Интересные факты</h3>
+                    </li>
+                    <li class="index__item item-menu item-menu-5">
+                        <div class="item-menu__number">05</div>
+                        <h3 class="title item-menu__title">Премьеры</h3>
+                    </li>
+                    <li class="index__item item-menu item-menu-6">
+                        <div class="item-menu__number">06</div>
+                        <h3 class="title item-menu__title">Студии</h3>
+                    </li>
+                    <li class="index__item item-menu item-menu-7">
+                        <div class="item-menu__number">07</div>
+                        <h3 class="title item-menu__title">Саундтреки</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="starring">
+            <div class="starring__container">
+                <div class="starring__content">
+                    <h3 class="title starring__title">В главных ролях</h3>
+                    <div class="starring__swiper swiper">
+
+                        <div class="starring__swiper-wrapper swiper-wrapper">
+
+                            <div class="starring__swiper-slide swiper-slide">
+                                <div class="starring__swiper-image swiper-image">
+                                    <img src="Images/starring/Starring1.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Джек Николсон</div>
+                                        <div class="swiper-content__name-eng">Jack Nicholson</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="starring__swiper-slide swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring2.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Шелли Дювалл</div>
+                                        <div class="swiper-content__name-eng">Shelley Duvall</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="starring__swiper-slide swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring3.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Скэтмэн Крозерс</div>
+                                        <div class="swiper-content__name-eng">Scatman Crothers</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide starring__swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring4.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Бэрри Нельсон</div>
+                                        <div class="swiper-content__name-eng">Barry Nelson</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide starring__swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring5.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Филип Стоун</div>
+                                        <div class="swiper-content__name-eng">Philip Stone</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide starring__swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring6.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Джо Тёркел</div>
+                                        <div class="swiper-content__name-eng">Joe Turkel</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide starring__swiper-slide">
+                                <div class="swiper-image starring__swiper-image">
+                                    <img src="Images/starring/Starring7.jpg" alt="image">
+                                    <div class="starring__swiper-content swiper-content">
+                                        <div class="swiper-content__name">Мэннинг Редвуд</div>
+                                        <div class="swiper-content__name-eng">Manning Redwood</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="images">
+            <div class="images__header">
+                <h3 class="title images__title">изображения</h3>
+                <div class="images__menu">
+                    <a href="#slider-1" class="images__link">Кадры</a>
+                    <a href="#slider-2" class="images__link">Постеры</a>
+                    <a href="#slider-3" class="images__link">Фан-арт</a>
+                    <a href="#slider-4" class="images__link">Съемки</a>
+                    <a href="#slider-5" class="images__link">Обложки</a>
+                </div>
+            </div>
+            <div class="images__swiper swiper">
+                <div class="images__swiper-wrapper swiper-wrapper">
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img class="swiper-lazy" data src="Images/images/images1.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img src="Images/images/images2.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img src="Images/images/images3.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img src="Images/images/images4.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img src="Images/images/images5.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image starring__swiper-image">
+                            <img src="Images/images/images6.jpg" alt="screen">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </section>
+
+        <section class="schedule">
+            <div class="container">
+                <div class="schedule__header">
+                    <div class="schedule__date">
+                        <h3 class="title schedule__title">Расписание</h3>
+                        <div class="schedule__calendar">
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">Сегодня</div>
+                                    <div class="calendar__item-number">30</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">Завтра</div>
+                                    <div class="calendar__item-number">1</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">сб</div>
+                                    <div class="calendar__item-number">2</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">вс</div>
+                                    <div class="calendar__item-number">3</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">пн</div>
+                                    <div class="calendar__item-number">4</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">вт</div>
+                                    <div class="calendar__item-number">5</div>
+                                </a>
+                            </div>
+
+                            <div class="schedule__calendar-item calendar-item">
+                                <a href="" class="calendar-item__link">
+                                    <div class="calendar__item-day">ср</div>
+                                    <div class="calendar__item-number">6</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule__list">
+                        <select class="schedule__city">
+                            <option selected style="display: none;">Москва</option>
+                            <option>Зеленоград</option>
+                            <option>Красногорск</option>
+                            <option>Лобня</option>
+                            <option>Химки</option>
+                            <option>Тверь</option>
+                        </select>
+
+                        <div class="schedule__place">
+                            <div class="schedule__place-title">Сортировка сеансов</div>
+                            <ul class="schedule__place-list place-list">
+                                <li class="place-list__item">
+                                    <select class="place-list__select" name="cinema">
+                                        <option style="display: none;">Кинотеатр </option>
+                                        <option>Киномакс Водный</option>
+                                        <option>Синема Парк Химки</option>
+                                        <option>Киносфера</option>
+                                        <option>Синема Парк DELUXE ТЦ «Метрополис»</option>
+                                    </select>
+                                </li>
+                                <li class="place-list__item">Время</li>
+                                <li class="place-list__item">Метро</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="schedule__body">
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+        <!-- <section class="container facts">
+        <h2 class="title facts_title">Интересные факты</h2>
+        <div class="facts_content">
+            <div class="facts_content-left">
+
+                <div class="facts_content-left_top">
+                    <img src="Images/facts1.jpg" alt="screen">
+                    <div class="left_descr-1">Чтобы погрузить съемочную группу в необходимое психологическое
+                        состояние, Кубрик показывал им фильм «Голова-ластик» (1977).
+                    </div>
+                </div>
+                <div class="facts_content-left_bottom">
+                    <img src="Images/facts3.jpg" alt="screen">
+                    <div class="left_descr-2">Как и в книге, в сценарии была сцена, в которой Джек находит
+                        альбом с газетными вырезками об отеле. По неизвестным причинам эта сцена так и не была
+                        должным
+                        образом снята, однако альбом все же можно увидеть в кадре. Он лежит рядом с пишущей машинкой
+                        в
+                        сцене, когда Джек сообщает Венди о том, чтобы его никогда не беспокоили, в то время как он
+                        работает.
+                    </div>
+                </div>
+            </div>
+            <div class="facts_content-right">
+                <div class="facts_content-right_top">
+                    <img src="Images/facts2.jpg" alt="screen">
+                    <div class="right_descr-1">Стивен Кинг пытался отговорить Кубрика приглашать на главную роль
+                        Джека Николсона и предлагал взамен взять <a>Джона Войта</a> или <a>Майкла Мориарти</a>. В
+                        качестве аргумента он
+                        приводил свое убеждение в том, что зрителю гораздо интереснее будет наблюдать за постепенным
+                        сумасшествием актера с изначально нормальным выражением лица, нежели за Николсоном, у
+                        которого с
+                        самого начала фильма несколько безумный вид.</div>
+                </div>
+                <div class="facts_content-right_bottom">
+                    <img src="Images/facts4.jpg" alt="screen">
+                    <div class="right_descr-2">Концовка оригинальной версии фильма Ридли Скотта «Бегущий по
+                        лезвию» содержит кадры с панорамными пролётами над горами — эти кадры были сняты для
+                        «Сияния»,
+                        но
+                        тоже были вырезаны.</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- <section class="container else">
+        <h2 class="title else_title">Что еще посмотреть</h2>
+        <ul class="else_list slider">
+            <li class="else_item slider_item">
+                <img src="Images/else1.jpg" alt="">
+                <div class="else_item-name">1408</div>
+                <div class="else_item-descr">2007, Ужасы</div>
+            </li>
+            <li class="else_item slider_item-2">
+                <img src="Images/else2.jpg" alt="">
+                <div class="else_item-name">Ужас Амитивилля</div>
+                <div class="else_item-descr">2005, Ужасы</div>
+            </li>
+            <li class="else_item">
+                <img src="Images/else3.jpg" alt="">
+                <div class="else_item-name">Тайное окно</div>
+                <div class="else_item-descr">2004, Триллер</div>
+            </li>
+            <li class="else_item">
+                <img src="Images/else4.jpg" alt="">
+                <div class="else_item-name">Психо</div>
+                <div class="else_item-descr">1960, Триллер</div>
+            </li>
+            <li class="else_item">
+                <img src="Images/else5.jpg" alt="">
+                <div class="else_item-name">Мизери</div>
+                <div class="else_item-descr">1990, Ужасы</div>
+            </li>
+            <li class="else_item">
+                <img src="Images/else6.jpg" alt="">
+                <div class="else_item-name">Молчание ягнят</div>
+                <div class="else_item-descr">1990, Триллер</div>
+            </li>
+            <li class="else_item">
+                <img src="Images/else7.jpg" alt="">
+                <div class="else_item-name">Остров проклятых</div>
+                <div class="else_item-descr">2009, Триллер</div>
+            </li>
+            <li class="else_item else_item-last">
+                <div class="else_item-last_name">12</div>
+                <div class="else_item-last_descr">всего</div>
+            </li>
+        </ul>
+    </section> -->
+    </main>
+    <footer class="footer">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24.9267" cy="24.9267" r="18.8973" transform="rotate(-23.8626 24.9267 24.9267)" fill="#FF8A00" />
+            <circle cx="24.9272" cy="24.9267" r="2" transform="rotate(-23.8626 24.9272 24.9267)" fill="white" />
+            <circle cx="21.542" cy="16.0365" r="5.5" transform="rotate(-23.8626 21.542 16.0365)" fill="white" />
+            <circle cx="29.2275" cy="33.4123" r="5.5" transform="rotate(-23.8626 29.2275 33.4123)" fill="white" />
+            <circle cx="34.0731" cy="20.8813" r="5.5" transform="rotate(66.1374 34.0731 20.8813)" fill="white" />
+            <circle cx="16.6971" cy="28.5676" r="5.5" transform="rotate(66.1374 16.6971 28.5676)" fill="white" />
+        </svg>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $('.schedule_menu-item_select').change(function () {
+            var text = $(this).find('option:selected').text()
+            var $aux = $('<select/>').append($('<option/>').text(text))
+            $(this).after($aux)
+            $(this).width($aux.width())
+            $aux.remove()
+        }).change()
+    </script> -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".starring__swiper", {
+            slidesPerView: 4.2,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-next'
+            },
+            loop: true,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".images__swiper", {
+            slidesPerView: 2,
+            navigation: {
+                nextEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-next'
+            },
+            centeredSlides: true,
+            slidesPerGroup: 1,
+            initialSlide: 1,
+            spaceBetween: 0,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>

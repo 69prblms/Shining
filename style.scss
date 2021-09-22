@@ -39,7 +39,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "suisse_intl-Regular";
 }
@@ -522,157 +524,163 @@ button {
         &__header {
             display: flex;
             justify-content: space-between;
-        }
-        &__date {
-            width: 50%;
-            min-width: 500px;
-        }
+            margin-bottom: 55px;
 
-        &__calendar {
-            display: flex;
+            .schedule__date {
+                width: 50%;
+                min-width: 500px;
 
-            &-item:not(:last-child) {
-                margin-right: 28px;
-            }
-            .calendar__item {
-                &-day {
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #8f8f8f;
-                    text-transform: capitalize;
-                    margin-bottom: 10px;
-                }
-                &-number {
-                    font-size: 18px;
-                    line-height: 28px;
-                    color: #ff8a00;
-                    transition: 0.3s;
-                    cursor: pointer;
+                .schedule__calendar {
+                    display: flex;
 
-                    &:hover {
-                        color: #000000;
+                    &-item:not(:last-child) {
+                        margin-right: 28px;
+                    }
+
+                    &-item {
+                        .calendar__item-day {
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #8f8f8f;
+                            text-transform: capitalize;
+                            margin-bottom: 10px;
+                        }
+                        .calendar__item-number {
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #ff8a00;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #000000;
+                            }
+                        }
                     }
                 }
             }
-        }
 
-        &__list {
-        }
-        &__city {
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #8f8f8f;
-            padding-bottom: 10px;
-            font-size: 18px;
-            line-height: 21px;
-            // min-width: 658px;
-            width: 100%;
-            cursor: pointer;
-            position: relative;
-            margin-bottom: 75px;
-        }
-        &__place {
-            &-title {
-                margin-bottom: 11px;
-                font-size: 14px;
-                line-height: 18px;
-                color: #8f8f8f;
-            }
-            &-list {
-                display: flex;
-                // max-width: 380px;
-                justify-content: space-between;
-            }
-
-            .place-list {
-                &__item {
-                    font-size: 18px;
-                    line-height: 28px;
-                    color: #ff8a00;
-                    transition: 0.3s;
-                    cursor: pointer;
-
-                    &:not(:last-child) {
-                        margin-right: 68px;
-                    }
-                    &:hover {
-                        color: #000000;
-                    }
-                }
-                &__select {
+            .schedule__forms {
+                .schedule__city {
                     border: none;
                     outline: none;
-                    min-width: 116px;
+                    border-bottom: 1px solid #8f8f8f;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    // min-width: 658px;
+                    width: 100%;
                     cursor: pointer;
+                    position: relative;
+                    margin-bottom: 75px;
+                }
+                .schedule__place {
+                    &-title {
+                        margin-bottom: 11px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #8f8f8f;
+                    }
+                    &-list {
+                        display: flex;
+                        // max-width: 380px;
+                        justify-content: space-between;
+                    }
 
-                    // &:focus {
-                    //     width: auto;
-                    // }
+                    .place-list {
+                        &__item {
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #ff8a00;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            &:not(:last-child) {
+                                margin-right: 68px;
+                            }
+                            &:hover {
+                                color: #000000;
+                            }
+                        }
+                        &__select {
+                            border: none;
+                            outline: none;
+                            min-width: 116px;
+                            cursor: pointer;
+
+                            // &:focus {
+                            //     width: auto;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__body {
+            .schedule__list {
+                border-top: 1px solid #000;
+
+                .schedule__item {
+                    display: flex;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid #000;
+
+                    &-cinema {
+                        width: 50%;
+                        min-width: 500px;
+                        padding-right: 30px;
+
+                        .cinema__title {
+                            font-size: 28px;
+                            line-height: 38px;
+                            text-transform: capitalize;
+                            min-width: 320px;
+                            margin-bottom: 6px;
+                        }
+                        .cinema__address {
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #8f8f8f;
+                        }
+                    }
+
+                    &-timing {
+                        .timing__wrapper {
+                            display: flex;
+
+                            &-item {
+                                cursor: pointer;
+                                min-width: 84px;
+                                color: #8f8f8f;
+
+                                &:not(:last-child) {
+                                    margin-right: 50px;
+                                }
+
+                                .timing-item__time {
+                                    font-size: 32px;
+                                    line-height: 32px;
+                                    margin-bottom: 11px;
+                                    transition: 0.3s;
+
+                                    &:hover {
+                                        color: #ff8a00;
+                                    }
+                                }
+                                .timing-item__price {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    color: #575757;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-
-    //
-    //
-    //
-    //     }
-    //     &_list {
-    //         border-top: 1px solid #000;
-    //     }
-    //     &_item {
-    //         display: flex;
-    //         padding-top: 40px;
-    //         padding-bottom: 40px;
-    //         border-bottom: 1px solid #000;
-    //         min-width: 1320px;
-
-    //         &-address {
-    //             font-size: 14px;
-    //             line-height: 18px;
-    //             color: #8f8f8f;
-    //         }
-    //         &-left {
-    //             width: 49%;
-    //         }
-
-    //         &-right_list {
-    //             display: flex;
-
-    //             .item_right {
-    //                 min-width: 84px;
-    //                 color: #8f8f8f;
-    //                 cursor: pointer;
-
-    //                 &:not(:last-child) {
-    //                     margin-right: 50px;
-    //                 }
-
-    //                 &-time {
-    //                     font-size: 32px;
-    //                     line-height: 32px;
-    //                     margin-bottom: 11px;
-    //                     transition: 0.3s;
-    //                 }
-    //                 &-time:hover {
-    //                     color: #ff8a00;
-    //                 }
-
-    //                 &-price {
-    //                     font-size: 14px;
-    //                     line-height: 18px;
-    //                 }
-    //             }
-    //         }
-
-    //         &-title {
-    //             font-size: 28px;
-    //             line-height: 38px;
-    //             text-transform: capitalize;
-    //             min-width: 320px;
-    //             margin-bottom: 6px;
-    //         }
-    //     }
 
     // ---------------------- facts----------------------
 
@@ -779,14 +787,14 @@ button {
 
 // ---------------------- footer----------------------
 
-.footer {
-    padding: 25px 60px;
-    background: #000000;
-    min-height: 200px;
-}
+// .footer {
+//     padding: 25px 60px;
+//     background: #000000;
+//     min-height: 200px;
+// }
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
-    .wrapper_box {
-        height: 900px;
-    }
-}
+// @media only screen and (min-width: 768px) and (max-width: 1366px) {
+//     .wrapper_box {
+//         height: 900px;
+//     }
+// }

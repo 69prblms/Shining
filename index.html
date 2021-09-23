@@ -8,7 +8,6 @@
     <title>Кино</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,6 +36,7 @@
         <section class="page__hero hero">
             <div class="container">
                 <div class="hero__content">
+                    <h1 class="vh__title">title</h1>
                     <div class="hero__content-main main-content">
                         <div class="main-content__age">
                             <img src="Images/hero/18+.svg" alt="18+">
@@ -52,9 +52,9 @@
                             <div class="main-content__number">189K</div>
                         </div>
                     </div>
-                    <picture class="hero__content-image">
+                    <picture>
                         <source srcset="Images/hero/hero-img.webp" type="image/webp">
-                        <img srcset="
+                        <img class="hero__content-image" srcset="
                         Images/hero/1736x1082.png 2x,
                         Images/hero/320x250.png 320w,
                         Images/hero/500x350.png 500w
@@ -79,12 +79,11 @@
         <section class="about">
             <div class="container">
                 <img src="Images/about/about-img.jpg" alt="кадр из фильма">
-                <h3 class="title about__title">
-                    <span class="about__title-line">История горе-писателя Джека Торренса,</span> смотрителя отеля
+                <h2 class="title about__title">История горе-писателя Джека Торренса, смотрителя отеля
                     «Оверлук»,
                     оставшегося в нем на зиму с семьей
                     и тронувшегося рассудком, основана на бестселлере Стивена Кинга, но существенно от него отличается.
-                </h3>
+                </h2>
                 <p class="about__subtitle">
                     Писатель был очень недоволен обращением с книгой, что не помешало картине вызвать восторг критиков и
                     зрителей. Стэнли Кубрик хотел снять самый страшный фильм на свете, и именно это у него и получилось,
@@ -103,7 +102,7 @@
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <h4 class="title trailer__title">Трейлер ре-релиза фильма</h4>
+                            <h3 class="title trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:52</div>
                         </div>
 
@@ -112,7 +111,7 @@
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <h4 class="trailer__title">Трейлер ре-релиза фильма</h4>
+                            <h3 class="trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:49</div>
                         </div>
 
@@ -164,7 +163,8 @@
                                 <a class="item-about__link">Роберт Фрайер</a>,
                                 <a class="item-about__link">Ян Харлан</a>,
                                 <a class="item-about__link">Мэри Лиа Джонсон</a>,
-                                <a class="item-about__link">...</a>
+                                <a class="item-about__link">Карлос Уэнди</a>
+                                <a class="item-about__link">Элкинд Томкинс</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
@@ -261,35 +261,35 @@
             <div class="container">
                 <ul class="index__list">
 
-                    <li class="index__item item-menu item-menu-1">
-                        <button>
+                    <li class="index__item item-menu item-menu-1 bg-hover">
+                        <button class="bg-hover">
                             <div class="item-menu__number">01</div>
-                            <h3 class="title item-menu__title">В главных ролях</h3>
+                            <h2 class="title item-menu__title">В главных ролях</h2>
                         </button>
                     </li>
-                    <li class="index__item item-menu item-menu-2">
+                    <li class="index__item item-menu item-menu-2 bg-hover">
                         <div class="item-menu__number">02</div>
-                        <h3 class="title item-menu__title">Изображения</h3>
+                        <h2 class="title item-menu__title">Изображения</h2>
                     </li>
-                    <li class="index__item item-menu item-menu-3">
+                    <li class="index__item item-menu item-menu-3 bg-hover">
                         <div class="item-menu__number">03</div>
-                        <h3 class="title item-menu__title">Расписание</h3>
+                        <h2 class="title item-menu__title">Расписание</h2>
                     </li>
                     <li class="index__item item-menu item-menu-4">
                         <div class="item-menu__number">04</div>
-                        <h3 class="title item-menu__title">Интересные факты</h3>
+                        <h2 class="title item-menu__title">Интересные факты</h2>
                     </li>
                     <li class="index__item item-menu item-menu-5">
                         <div class="item-menu__number">05</div>
-                        <h3 class="title item-menu__title">Премьеры</h3>
+                        <h2 class="title item-menu__title">Премьеры</h2>
                     </li>
                     <li class="index__item item-menu item-menu-6">
                         <div class="item-menu__number">06</div>
-                        <h3 class="title item-menu__title">Студии</h3>
+                        <h2 class="title item-menu__title">Студии</h2>
                     </li>
                     <li class="index__item item-menu item-menu-7">
                         <div class="item-menu__number">07</div>
-                        <h3 class="title item-menu__title">Саундтреки</h3>
+                        <h2 class="title item-menu__title">Саундтреки</h2>
                     </li>
                 </ul>
             </div>
@@ -298,7 +298,7 @@
         <section class="starring">
             <div class="starring__container">
                 <div class="starring__content">
-                    <h3 class="title starring__title">В главных ролях</h3>
+                    <h2 class="title starring__title">В главных ролях</h2>
                     <div class="starring__swiper swiper">
 
                         <div class="starring__swiper-wrapper swiper-wrapper">
@@ -377,51 +377,47 @@
         </section>
 
         <section class="images">
-            <div class="images__header">
-                <h3 class="title images__title">изображения</h3>
-                <div class="images__menu">
-                    <a href="#slider-1" class="images__link">Кадры</a>
-                    <a href="#slider-2" class="images__link">Постеры</a>
-                    <a href="#slider-3" class="images__link">Фан-арт</a>
-                    <a href="#slider-4" class="images__link">Съемки</a>
-                    <a href="#slider-5" class="images__link">Обложки</a>
-                </div>
+            <div class="container">
+                <h2 class="title images__title">изображения</h2>
             </div>
-            <div class="images__swiper swiper">
+            
+
+
+            <div class="swiper images__swiper">
                 <div class="images__swiper-wrapper swiper-wrapper">
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
-                            <img class="swiper-lazy" data src="Images/images/images1.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images1.jpg" alt="screen">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
+                    <div class="images__swiper-slide">
+                        <div class="images-image images__swiper-image">
                             <img src="Images/images/images2.jpg" alt="screen">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
+                    <div class="swiper-slide images__swiper-slide">
+                        <div class="images-image images__swiper-image">
                             <img src="Images/images/images3.jpg" alt="screen">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
+                    <div class="swiper-slide images__swiper-slide">
+                        <div class="images-image images__swiper-image">
                             <img src="Images/images/images4.jpg" alt="screen">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
+                    <div class="swiper-slide images__swiper-slide">
+                        <div class="images-image images__swiper-image">
                             <img src="Images/images/images5.jpg" alt="screen">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide swiper-slide">
-                        <div class="images-image starring__swiper-image">
+                    <div class="swiper-slide images__swiper-slide">
+                        <div class="images-image images__swiper-image">
                             <img src="Images/images/images6.jpg" alt="screen">
                         </div>
                     </div>
@@ -430,6 +426,42 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            <div class="swiper images__swiper-2">
+                <div class="swiper-wrapper images__swiper-2-wrapper">
+
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min1.jpg" alt="screen">
+                        </div>
+                    </div>
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min2.jpg" alt="screen">
+                        </div>
+                    </div>
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min3.jpg" alt="screen">
+                        </div>
+                    </div>
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min4.jpg" alt="screen">
+                        </div>
+                    </div>
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min5.jpg" alt="screen">
+                        </div>
+                    </div>
+                    <div class="images__swiper-2-slide swiper-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images-min6.jpg" alt="screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
 
         </section>
 
@@ -437,7 +469,7 @@
             <div class="container">
                 <div class="schedule__header">
                     <div class="schedule__date">
-                        <h3 class="title schedule__title">Расписание</h3>
+                        <h2 class="title schedule__title">Расписание</h2>
                         <div class="schedule__calendar">
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
@@ -496,7 +528,6 @@
                             <option>Красногорск</option>
                             <option>Лобня</option>
                             <option>Химки</option>
-                            <option>Тверь</option>
                         </select>
 
                         <div class="schedule__place">
@@ -621,20 +652,22 @@
             </div>
         </section>
 
-        <!-- <section class="container facts">
-            <h2 class="title facts_title">Интересные факты</h2>
-            <div class="facts_content">
-                <div class="facts_content-left">
+         <section class="facts">
+             <div class="container">
+            <h2 class="title facts__title">Интересные факты</h2>
+            <div class="facts__content">
 
-                    <div class="facts_content-left_top">
-                        <img src="Images/facts1.jpg" alt="screen">
-                        <div class="left_descr-1">Чтобы погрузить съемочную группу в необходимое психологическое
+                <div class="facts__left">
+                    
+                    <div class="facts__left-top top-left">
+                        <img src="Images/facts/facts1.jpg">
+                        <div class="top-left__decription">Чтобы погрузить съемочную группу в необходимое психологическое
                             состояние, Кубрик показывал им фильм «Голова-ластик» (1977).
                         </div>
                     </div>
-                    <div class="facts_content-left_bottom">
-                        <img src="Images/facts3.jpg" alt="screen">
-                        <div class="left_descr-2">Как и в книге, в сценарии была сцена, в которой Джек находит
+                    <div class="facts__left-bottom bottom-left">
+                        <img src="Images/facts/facts3.jpg" alt="screen">
+                        <div class="bottom-left__decription">Как и в книге, в сценарии была сцена, в которой Джек находит
                             альбом с газетными вырезками об отеле. По неизвестным причинам эта сцена так и не была
                             должным
                             образом снята, однако альбом все же можно увидеть в кадре. Он лежит рядом с пишущей машинкой
@@ -644,20 +677,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="facts_content-right">
-                    <div class="facts_content-right_top">
-                        <img src="Images/facts2.jpg" alt="screen">
-                        <div class="right_descr-1">Стивен Кинг пытался отговорить Кубрика приглашать на главную роль
-                            Джека Николсона и предлагал взамен взять <a>Джона Войта</a> или <a>Майкла Мориарти</a>. В
+                <div class="facts__right">
+                    <div class="facts__right-top top-right">                        
+                        <img src="Images/facts/facts2.jpg" alt="screen">
+                        <div class="top-right__decription">Стивен Кинг пытался отговорить Кубрика приглашать на главную роль
+                            Джека Николсона и предлагал взамен взять <a class="top-right__link">Джона Войта</a> или <a class="top-right__link">Майкла Мориарти</a>. В
                             качестве аргумента он
                             приводил свое убеждение в том, что зрителю гораздо интереснее будет наблюдать за постепенным
                             сумасшествием актера с изначально нормальным выражением лица, нежели за Николсоном, у
                             которого с
                             самого начала фильма несколько безумный вид.</div>
                     </div>
-                    <div class="facts_content-right_bottom">
-                        <img src="Images/facts4.jpg" alt="screen">
-                        <div class="right_descr-2">Концовка оригинальной версии фильма Ридли Скотта «Бегущий по
+                    <div class="facts__right-bottom bottom-right">
+                        <img src="Images/facts/facts4.jpg" alt="screen">
+                        <div class="bottom-right__decription">Концовка оригинальной версии фильма Ридли Скотта «Бегущий по
                             лезвию» содержит кадры с панорамными пролётами над горами — эти кадры были сняты для
                             «Сияния»,
                             но
@@ -665,7 +698,8 @@
                     </div>
                 </div>
             </div>
-        </section>  -->
+        </div>
+        </section> 
 
         <!-- <section class="container else">
         <h2 class="title else_title">Что еще посмотреть</h2>
@@ -727,7 +761,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
     <script type="text/javascript">
         $('.schedule_menu-item_select').change(function () {
             var text = $(this).find('option:selected').text()
@@ -736,34 +769,11 @@
             $(this).width($aux.width())
             $aux.remove()
         }).change()
-    </script> -->
+        </script> -->
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".starring__swiper", {
-            slidesPerView: 4.2,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next'
-            },
-            loop: true,
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".images__swiper", {
-            slidesPerView: 2,
-            navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next'
-            },
-            centeredSlides: true,
-            slidesPerGroup: 1,
-            initialSlide: 1,
-            spaceBetween: 0,
-            loop: true,
-        });
-    </script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
 
 </body>
 

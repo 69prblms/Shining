@@ -23,21 +23,6 @@ var swiper = new Swiper(".starring__swiper", {
     },
 });
 
-// var swiper = new Swiper(".images__swiper", {
-//     slidesPerView: "auto",
-//     navigation: {
-//         nextEl: '.swiper-button-prev',
-//         prevEl: '.swiper-button-next'
-//     },
-//     centeredSlides: true,
-//     slidesPerGroup: 1,
-//     initialSlide: 1,
-//     spaceBetween: 0,
-//     loop: true,
-// });
-
-
-
 var swiper = new Swiper(".images__swiper", {
     loop: true,
     spaceBetween: 0,
@@ -57,6 +42,14 @@ var swiper = new Swiper(".images__swiper", {
     },
   });
 
+  var swiper = new Swiper(".else__swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next'
+    },
+});
 
  
 

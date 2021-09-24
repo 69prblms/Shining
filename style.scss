@@ -1,32 +1,27 @@
 @font-face {
-    font-family: "suisse_intl";
-    src: url("../Fonts/suisseintl-light-webfont.woff2") format("woff2"),
-        url("../Fonts/suisseintl-light-webfont.woff") format("woff");
+    font-family: "SuisseIntl";
+    src: url("font/sSuisseIntl-Light.woff2") format("woff2"), url("fonts/SuisseIntl-Light.woff") format("woff");
     font-style: normal;
     font-display: swap;
     font-weight: 300;
 }
 @font-face {
-    font-family: "suisse_intl";
-    src: url("../Fonts/suisseintl-regular-webfont.woff2") format("woff2"),
-        url("../Fonts/suisseintl-regular-webfont.woff2") format("woff");
-    src: url(Fonts/);
+    font-family: "SuisseIntl";
+    src: url("fonts/SuisseIntl-Regular.woff2") format("woff2"), url("fonts/SuisseIntl-Regular.woff") format("woff");
     font-style: normal;
     font-display: swap;
     font-weight: 400;
 }
 @font-face {
-    font-family: "suisse_intl";
-    src: url("../Fonts/suisseintl-medium-webfont.woff2") format("woff2"),
-        url("../Fonts/suisseintl-medium-webfont.woff") format("woff");
+    font-family: "SuisseIntl";
+    src: url("fonts/SuisseIntl-Medium.woff2") format("woff2"), url("fonts/SuisseIntl-Medium.woff") format("woff");
     font-style: normal;
     font-display: swap;
     font-weight: 500;
 }
 @font-face {
-    font-family: "suisse_intl";
-    src: url("../Fonts/suisseintl-semibold-webfont.woff") format("woff2"),
-        url("../Fonts/suisseintl-semibold-webfont.woff2") format("woff");
+    font-family: "SuisseIntl";
+    src: url("fonts/SuisseIntl-SemiBold.woff") format("woff2"), url("fonts/SuisseIntl-SemiBold.woff") format("woff");
     font-style: normal;
     font-display: swap;
     font-weight: 600;
@@ -35,7 +30,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "suisse_intl";
+    font-family: "SuisseIntl";
 }
 .container {
     width: 100%;
@@ -50,11 +45,12 @@ body {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 70px;
-    
 }
 button {
     padding: 0;
     border: none;
+    font: inherit;
+    color: inherit;
     background-color: transparent;
     cursor: pointer;
 }
@@ -185,9 +181,10 @@ button {
             &-image {
                 position: relative;
                 top: -130px;
+                display: block;
                 margin: 0 auto;
-                width: 100%;
-                max-width: 868px;
+                max-width: 100%;
+                object-fit: cover;
             }
 
             &-ticket {
@@ -340,12 +337,10 @@ button {
     .index {
         padding-bottom: 130px;
         &__list {
-            // width: 100%;
             border-bottom: 1px #000000 solid;
         }
         &__item {
-            display: flex;
-            align-items: center;
+            position: relative;
             border-top: 1px #000000 solid;
             padding: 30px 0;
             cursor: pointer;
@@ -356,15 +351,26 @@ button {
             background-size: cover;
             background-position: center;
 
-            &__number {
-                font-size: 14px;
-                line-height: 18px;
-                color: #575757;
-                width: 25%;
-            }
-            &__title {
-                color: #ff8a00;
-                margin-bottom: 0;
+            &__button {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                .button-menu {
+                    &__number {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #575757;
+                        width: 25%;
+                        min-width: 100px;
+                        text-align: start;
+                    }
+                    &__title {
+                        color: #ff8a00;
+                        margin-bottom: 0;
+                        text-align: left;
+                    }
+                }
             }
 
             &-1:hover {
@@ -389,7 +395,8 @@ button {
                 background-image: url(/Images/index/Menu7.jpg);
             }
 
-            .bg-hover:hover h2 {
+            &:hover h2,
+            &:hover div {
                 color: #fff;
             }
         }
@@ -403,11 +410,9 @@ button {
 
         &__container {
             width: 100%;
-            max-width: 1440px;
+            max-width: 1320px;
             margin: 0 auto;
             padding: 0 60px;
-        }
-        &__content {
         }
 
         &__swiper {
@@ -431,6 +436,7 @@ button {
 
             .starring__swiper-slide {
                 width: 304px;
+                cursor: pointer;
             }
             .starring__swiper-slide:nth-child(2n) {
                 margin-top: 230px;
@@ -446,8 +452,6 @@ button {
                 margin-bottom: 30px;
             }
             .swiper-content {
-                cursor: pointer;
-
                 &__name {
                     font-size: 28px;
                     line-height: 38px;
@@ -501,8 +505,9 @@ button {
             .images__swiper-slide {
                 padding-bottom: 40px;
                 width: 940px;
+                cursor: pointer;
             }
-            
+
             .images__swiper-image img {
                 display: block;
                 width: 100%;
@@ -513,9 +518,8 @@ button {
 
         &__swiper-2 {
             max-width: 372px;
-            
-            .images__swiper-2-wrapper {
 
+            .images__swiper-2-wrapper {
             }
 
             .images__swiper-2-slide {
@@ -523,8 +527,6 @@ button {
             }
             .images__swiper-2-image img {
             }
-        
-           
         }
     }
 
@@ -535,10 +537,11 @@ button {
 
         &__header {
             display: flex;
+            flex-wrap: wrap;
             margin-bottom: 55px;
-            
+
             .schedule__date {
-                width: 50%;
+                width: 49%;
                 min-width: 400px;
 
                 .schedule__calendar {
@@ -572,6 +575,7 @@ button {
             }
 
             .schedule__forms {
+                width: 50%;
                 .schedule__city {
                     border: none;
                     outline: none;
@@ -633,12 +637,13 @@ button {
 
                 .schedule__item {
                     display: flex;
+                    flex-wrap: wrap;
                     padding-top: 40px;
                     padding-bottom: 40px;
                     border-bottom: 1px solid #000;
 
                     &-cinema {
-                        width: 50%;
+                        width: 49%;
                         min-width: 400px;
                         padding-right: 30px;
 
@@ -656,12 +661,13 @@ button {
                     }
 
                     &-timing {
+                        width: 50%;
+
                         .timing__wrapper {
                             display: flex;
 
                             &-item {
                                 cursor: pointer;
-                                // min-width: 84px;
                                 color: #8f8f8f;
 
                                 &:not(:last-child) {
@@ -694,7 +700,7 @@ button {
     // ---------------------- facts----------------------
 
     .facts {
-
+        padding-bottom: 150px;
         img {
             margin-bottom: 30px;
             max-width: 100%;
@@ -717,32 +723,28 @@ button {
             }
 
             &-bottom {
-
                 .bottom-left__decription {
                     max-width: 655px;
                 }
             }
         }
-         
-        &__right {
 
+        &__right {
             &-top {
                 margin-bottom: 140px;
             }
 
             .top-right {
-
                 &__decription {
-                max-width: 620px;
+                    max-width: 620px;
+                }
+                &__link {
+                    color: #ff8a00;
+                    cursor: pointer;
+                }
             }
-            &__link {
-                color: #ff8a00;
-                cursor: pointer;
-            }
-        }
 
             &-bottom {
-                
                 .bottom-right__decription {
                     max-width: 310px;
                     margin-left: auto;
@@ -754,71 +756,104 @@ button {
     // ---------------------- else----------------------
 
     .else {
-        position: relative;
-        padding: 0 200px;
         padding-bottom: 40px;
-        img {
-            margin-bottom: 25px;
+        overflow: hidden;
+
+        &__container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 60px;
         }
-        &_item {
-            margin-right: 22px;
 
-            &-last {
-                height: 464px;
-                background-color: #f7f7f7;
-                color: rgb(88, 88, 88);
-                text-align: center;
+        &__swiper {
+            overflow: inherit;
 
-                &_name {
-                    font-size: 46px;
-                    margin-bottom: 10px;
+            .swiper-button-prev {
+                background: url(/Images/arrow-left.svg);
+                width: 140px;
+                height: 140px;
+                top: 50%;
+            }
+            .swiper-button-next {
+                background: url(/Images/arrow-right.svg);
+                width: 140px;
+                height: 140px;
+            }
+            .swiper-button-prev:after,
+            .swiper-button-next:after {
+                display: none;
+            }
+
+            &-slide {
+                width: 304px;
+                cursor: pointer;
+            }
+            &-image img {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            &-content {
+                .swiper-content {
+                    &__name {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                        margin-bottom: 14px;
+                    }
+                    &__description {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #8f8f8f;
+                    }
                 }
             }
-            &-name {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 30px;
-                margin-bottom: 14px;
-            }
-            &-descr {
-                font-size: 14px;
-                line-height: 18px;
-                color: #8f8f8f;
+
+            &-slide-last {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #f7f7f7;
+                width: 304px;
+                height: 458px;
+                transition: 0.3s ease;
+                cursor: pointer;
+
+                .else__swiper-content-last {
+                    color: #8f8f8f;
+                }
+                .swiper-content__name-last {
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                    transition: 0.3s ease;
+                }
+                .swiper-content__description-last {
+                    font-size: 18px;
+                    transition: 0.3s ease;
+                }
+
+                &:hover {
+                    background-color: #f8e600;
+                }
+                &:hover div {
+                    color: #ffffff;
+                }
             }
         }
     }
 }
 
-// .else .slick-arrow {
-//     position: absolute;
-//     top: 50%;
-//     z-index: 10;
-//     font-size: 0;
-//     width: 140px;
-//     height: 140px;
-//     margin: -70px 0 0 0;
-// }
-// .else .slick-arrow.slick-prev {
-//     left: 0;
-//     background: url(/Images/arrow-left.svg) 100% no-repeat;
-//     border: none;
-// }
-// .else .slick-arrow.slick-next {
-//     right: 0;
-//     background: url(/Images/arrow-right.svg) 100% no-repeat;
-//     border: none;
-// }
-
 // ---------------------- footer----------------------
 
-// .footer {
-//     padding: 25px 60px;
-//     background: #000000;
-//     min-height: 200px;
-// }
+.footer {
+    padding: 25px 60px;
+    background: #000000;
+    min-height: 200px;
+}
 
-// @media only screen and (min-width: 768px) and (max-width: 1366px) {
-//     .wrapper_box {
-//         height: 900px;
-//     }
-// }
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .wrapper_box {
+        height: 900px;
+    }
+}

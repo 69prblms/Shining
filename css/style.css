@@ -245,7 +245,7 @@ button {
 }
 
 .page .hero__content-ticket {
-  background-image: url(/images/fill-star.svg);
+  background-image: url(../images/fill-star.svg);
   background-repeat: no-repeat;
   width: 140px;
   height: 140px;

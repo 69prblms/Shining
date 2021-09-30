@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
             <div class="header__content">
                 <div class="header__icons-main">
                     <a class="logo" href="#">
-                        <img src="Images/header/logo.svg" alt="logo">
+                        <img src="images/header/logo.svg" alt="логотип">
                     </a>
                     <button class="burger"></button>
                 </div>
@@ -39,32 +39,33 @@
                     <h1 class="vh__title">title</h1>
                     <div class="hero__content-main main-content">
                         <div class="main-content__age">
-                            <img src="Images/hero/18+.svg" alt="18+">
+                            <img src="images/hero/18+.svg" alt="огарничение 18+">
                         </div>
-                        <div class="main-content__name">Сияние</div>
-
-                        <div class="main-content__1">
-                            <div class="main-content__year">1980</div>
-                            <div class="main-content__director">Стэнли Кубрик</div>
+                        <div class="main-content__title title-content">
+                            <div class="title-content__name">Сияние</div>
+                            <div class="title-content__year">1980</div>
+                            <div class="title-content__director">Стэнли Кубрик</div>
                         </div>
-                        <div class="main-content__2">
-                            <div class="main-content__rate">7.8</div>
-                            <div class="main-content__number">189K</div>
+                        <div class="main-content__data data-content">
+                            <div class="data-content__rate">7.8</div>
+                            <div class="data-content__number">189K</div>
+                            <div class="data-content__age-reserve">
+                                <img src="images/hero/18+.svg" alt="огарничение 18+">
+                            </div>
                         </div>
                     </div>
                     <picture>
-                        <source srcset="Images/hero/hero-img.webp" type="image/webp">
+                        <source srcset="images/hero/hero-img.webp" type="image/webp">
                         <img class="hero__content-image" srcset="
-                        Images/hero/1736x1082.png 2x,
-                        Images/hero/320x250.png 320w,
-                        Images/hero/500x350.png 500w
+                        images/hero/1736x1082.png 2x,
+                        images/hero/320x250.png 320w,
+                        images/hero/500x350.png 500w
                         " sizes="(max-width: 1000px) 500px, (max-width: 500px) 320px, 100vw"
-                            src="Images/hero/868x541.png" alt="main_picture">
+                            src="images/hero/868x541.png" aria-hidden="true" alt="фото Джека Торренса">
                     </picture>
                     <div class="hero__content-ticket ticket">
                         <a class="ticket__link" href="">Купить билет</a>
                     </div>
-
                     <div class="hero__content-descr descr-content">
                         <div class="descr-content__premiere">Снова в кино с 30 июля </div>
                         <p class="descr-content__info">Писатель приезжает с семьей в загадочный отель. Противоречивый
@@ -78,7 +79,7 @@
 
         <section class="about">
             <div class="container">
-                <img src="Images/about/about-img.jpg" alt="кадр из фильма">
+                <img class="about__main-img" src="images/about/about-img.jpg" alt="кадр из фильма">
                 <h2 class="title about__title">История горе-писателя Джека Торренса, смотрителя отеля
                     «Оверлук»,
                     оставшегося в нем на зиму с семьей
@@ -97,20 +98,19 @@
                 </p>
                 <div class="about__content">
                     <div class="about__trailer trailer">
-                        <div class="trailer__video-1">
-                            <iframe src="https://www.youtube.com/embed/5GAqSMT3iR8" width="240"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+
+                        <div class="trailer__video-top">
+                            <a class="trailer__link-top" href="https://www.youtube.com/embed/5GAqSMT3iR8" rel="noreferrer nofollow" target="_blank">
+                                <img class="trailer__image-top" src="images/about/video-1.jpg" alt="ссылка на первый трейлер">
+                            </a>
                             <h3 class="title trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:52</div>
                         </div>
 
-                        <div class="trailer__video-2">
-                            <iframe src="https://www.youtube.com/embed/NMSUEhDWXH0" width="240"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="trailer__video-bottom">
+                            <a class="trailer__link-bottom" href="https://www.youtube.com/embed/NMSUEhDWXH0" rel="noreferrer nofollow" target="_blank">
+                            <img class="trailer__image-bottom" src="images/about/video-2.jpg" alt="ссылка на второй трейлер">
+                            </a>
                             <h3 class="trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:49</div>
                         </div>
@@ -197,25 +197,25 @@
                         <li class="about__item item-about">
                             <div class="item-about__title">Бюджет</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">$19 000 000</a>
+                                <a class="item-about__link" aria-label="$19000000">$19 000 000</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в США</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">$44 017 3740</a>
+                                <a class="item-about__link" aria-label="$440173740">$44 017 3740</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в мире</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">+ $18 376 = $44 035 750</a>
+                                <a class="item-about__link" aria-label="$44035750">+ $18 376 = $44 035 750</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в России</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">$145 815</a>
+                                <a class="item-about__link" aria-label="$145815">$145 815</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
@@ -241,9 +241,9 @@
                             <div class="item-about__descr">18+</div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Рейтинг MPAA</div>
-                            <div class="item-about__descr">R
-                            </div>
+                            <div class="item-about__title" aria-label="Ассоциация MPAA (Американская Киноассоциация, Motion Picture Association of America) является родоначальницей рейтинговой системы, помогающей родителям оценить, подходят ли те или иные фильмы для просмотра их детьми.">Рейтинг MPAA</div>
+                            <div class="item-about__descr" aria-label="Рейтинг R. Такой рейтинг получают фильмы, в содержании которых обязательно содержится материал, предназначенный только для взрослой аудитории. Родителям рекомендуется хорошо подумать, прежде чем пойти на него вместе со своими детьми.
+                            Фильм, получивший рейтинг R, скорее всего содержит сексуальные сцены, эпизоды с употреблением наркотиков, нецензурную брань, фрагменты с насилием и т.д.">R</div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Время</div>
@@ -251,7 +251,7 @@
                         </li>
 
                     </ul>
-
+                    <button class="btn about__btn-more">Еще</button>
                 </div>
 
             </div>
@@ -266,13 +266,13 @@
                             <h2 class="title button-menu__title">В главных ролях</h2>
                         </button>
                     </li>
-                    <li class="index__item item-menu item-menu-2 bg-hover">
+                    <li class="index__item item-menu item-menu-2">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">02</div>
                             <h2 class="title button-menu__title">Изображения</h2>
                         </button>
                     </li>
-                    <li class="index__item item-menu item-menu-3 bg-hover">
+                    <li class="index__item item-menu item-menu-3">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">03</div>
                             <h2 class="title button-menu__title">Расписание</h2>
@@ -316,7 +316,7 @@
 
                             <div class="starring__swiper-slide swiper-slide">
                                 <div class="starring__swiper-image swiper-image">
-                                    <img src="Images/starring/Starring1.jpg" alt="image">
+                                    <img src="images/starring/Starring1.jpg" alt="фото Джек Николсон">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Джек Николсон</div>
                                         <div class="swiper-content__name-eng">Jack Nicholson</div>
@@ -325,7 +325,7 @@
                             </div>
                             <div class="starring__swiper-slide swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring2.jpg" alt="image">
+                                    <img src="images/starring/Starring2.jpg" alt="фото Шелли Дювалл">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Шелли Дювалл</div>
                                         <div class="swiper-content__name-eng">Shelley Duvall</div>
@@ -334,7 +334,7 @@
                             </div>
                             <div class="starring__swiper-slide swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring3.jpg" alt="image">
+                                    <img src="images/starring/Starring3.jpg" alt="фото Скэтмэн Крозерс">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Скэтмэн Крозерс</div>
                                         <div class="swiper-content__name-eng">Scatman Crothers</div>
@@ -343,7 +343,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring4.jpg" alt="image">
+                                    <img src="images/starring/Starring4.jpg" alt="фото Бэрри Нельсон">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Бэрри Нельсон</div>
                                         <div class="swiper-content__name-eng">Barry Nelson</div>
@@ -352,7 +352,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring5.jpg" alt="image">
+                                    <img src="Images/starring/Starring5.jpg" alt="фото Филип Стоун">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Филип Стоун</div>
                                         <div class="swiper-content__name-eng">Philip Stone</div>
@@ -361,7 +361,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring6.jpg" alt="image">
+                                    <img src="Images/starring/Starring6.jpg" alt="фото Джо Тёркел">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Джо Тёркел</div>
                                         <div class="swiper-content__name-eng">Joe Turkel</div>
@@ -370,7 +370,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring7.jpg" alt="image">
+                                    <img src="Images/starring/Starring7.jpg" alt="фото Мэннинг Редвуд">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Мэннинг Редвуд</div>
                                         <div class="swiper-content__name-eng">Manning Redwood</div>
@@ -394,48 +394,48 @@
 
 
 
-            <div class="swiper images__swiper">
-                <div class="images__swiper-wrapper swiper-wrapper">
+            <div class="swiper images__swiper-2">
+                <div class="images__swiper-2-wrapper swiper-wrapper">
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images1.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images1.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images2.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images2.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images3.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images3.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images4.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images4.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images5.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images5.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images6.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images6.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
-                    <div class="swiper-slide images__swiper-slide">
-                        <div class="images-image images__swiper-image">
-                            <img src="Images/images/images7.jpg" alt="screen">
+                    <div class="swiper-slide images__swiper-2-slide">
+                        <div class="images-image images__swiper-2-image">
+                            <img src="Images/images/images7.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
@@ -443,37 +443,37 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper images__swiper-2">
-                <div class="swiper-wrapper images__swiper-2-wrapper">
+            <div class="swiper images__swiper">
+                <div class="swiper-wrapper images__swiper-wrapper">
 
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min1.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min1.jpg" alt="кадр из фильма">
                         </div>
                     </div>
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min2.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min2.jpg" alt="кадр из фильма">
                         </div>
                     </div>
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min3.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min3.jpg" alt="кадр из фильма">
                         </div>
                     </div>
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min4.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min4.jpg" alt="кадр из фильма">
                         </div>
                     </div>
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min5.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min5.jpg" alt="кадр из фильма">
                         </div>
                     </div>
-                    <div class="images__swiper-2-slide swiper-slide">
-                        <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images-min6.jpg" alt="screen">
+                    <div class="images__swiper-slide swiper-slide">
+                        <div class="images-image images__swiper-image">
+                            <img src="Images/images/images-min6.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                 </div>
@@ -489,57 +489,57 @@
                         <h2 class="title schedule__title">Расписание</h2>
                         <div class="schedule__calendar">
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">Сегодня</div>
-                                    <div class="calendar__item-number">30</div>
+                                <a href="" class="calendar-item__link" aria-current="page">
+                                    <div class="calendar-item__day">Сегодня</div>
+                                    <div class="calendar-item__number">30</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">Завтра</div>
-                                    <div class="calendar__item-number">1</div>
+                                    <div class="calendar-item__day">Завтра</div>
+                                    <div class="calendar-item__number">1</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">сб</div>
-                                    <div class="calendar__item-number">2</div>
+                                    <div class="calendar-item__day">сб</div>
+                                    <div class="calendar-item__number">2</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">вс</div>
-                                    <div class="calendar__item-number">3</div>
+                                    <div class="calendar-item__day">вс</div>
+                                    <div class="calendar-item__number">3</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">пн</div>
-                                    <div class="calendar__item-number">4</div>
+                                    <div class="calendar-item__day">пн</div>
+                                    <div class="calendar-item__number">4</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">вт</div>
-                                    <div class="calendar__item-number">5</div>
+                                    <div class="calendar-item__day">вт</div>
+                                    <div class="calendar-item__number">5</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
                                 <a href="" class="calendar-item__link">
-                                    <div class="calendar__item-day">ср</div>
-                                    <div class="calendar__item-number">6</div>
+                                    <div class="calendar-item__day">ср</div>
+                                    <div class="calendar-item__number">6</div>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="schedule__forms">
-                        <select class="schedule__city">
+                        <select class="schedule__city" aria-haspopup="true" aria-expanded="false">
                             <option selected style="display: none;">Москва</option>
                             <option>Зеленоград</option>
                             <option>Красногорск</option>
@@ -677,14 +677,14 @@
                     <div class="facts__left">
 
                         <div class="facts__left-top top-left">
-                            <img src="Images/facts/facts1.jpg">
+                            <img src="Images/facts/facts1.jpg" alt="кадр из фильма «Голова-ластик»">
                             <div class="top-left__decription">Чтобы погрузить съемочную группу в необходимое
                                 психологическое
                                 состояние, Кубрик показывал им фильм «Голова-ластик» (1977).
                             </div>
                         </div>
                         <div class="facts__left-bottom bottom-left">
-                            <img src="Images/facts/facts3.jpg" alt="screen">
+                            <img src="Images/facts/facts3.jpg" alt="кадр из фильма">
                             <div class="bottom-left__decription">Как и в книге, в сценарии была сцена, в которой Джек
                                 находит
                                 альбом с газетными вырезками об отеле. По неизвестным причинам эта сцена так и не была
@@ -700,7 +700,7 @@
                     </div>
                     <div class="facts__right">
                         <div class="facts__right-top top-right">
-                            <img src="Images/facts/facts2.jpg" alt="screen">
+                            <img src="Images/facts/facts2.jpg" alt="фото Джека Николсона">
                             <div class="top-right__decription">Стивен Кинг пытался отговорить Кубрика приглашать на
                                 главную роль
                                 Джека Николсона и предлагал взамен взять <a class="top-right__link">Джона Войта</a> или
@@ -714,7 +714,7 @@
                             </div>
                         </div>
                         <div class="facts__right-bottom bottom-right">
-                            <img src="Images/facts/facts4.jpg" alt="screen">
+                            <img src="Images/facts/facts4.jpg" alt="кадр с видами гор, леса и реки">
                             <div class="bottom-right__decription">Концовка оригинальной версии фильма Ридли Скотта
                                 «Бегущий по
                                 лезвию» содержит кадры с панорамными пролётами над горами — эти кадры были сняты для
@@ -724,6 +724,7 @@
                         </div>
                     </div>
                 </div>
+                <button class="btn facts__btn-more">Еще</button>
             </div>
         </section>
 
@@ -735,7 +736,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else1.jpg" alt="image">
+                                <img src="Images/else/else1.jpg" alt="плакат фильма 1408">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">1408</div>
                                     <div class="swiper-content__description">2007, Ужасы</div>
@@ -745,7 +746,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else2.jpg" alt="image">
+                                <img src="Images/else/else2.jpg" alt="плакат фильма Ужас Амитивилля">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Ужас Амитивилля</div>
                                     <div class="swiper-content__description">2005, Ужасы</div>
@@ -755,7 +756,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else3.jpg" alt="image">
+                                <img src="Images/else/else3.jpg" alt="плакат фильма Тайное окно">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Тайное окно</div>
                                     <div class="swiper-content__description">2004, Триллер</div>
@@ -765,7 +766,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else4.jpg" alt="image">
+                                <img src="Images/else/else4.jpg" alt="плакат фильма Психо">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Психо</div>
                                     <div class="swiper-content__description">1960, Триллер</div>
@@ -775,7 +776,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else5.jpg" alt="image">
+                                <img src="Images/else/else5.jpg" alt="плакат фильма Мизери">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Мизери</div>
                                     <div class="swiper-content__description">1990, Ужасы</div>
@@ -785,7 +786,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else6.jpg" alt="image">
+                                <img src="Images/else/else6.jpg" alt="плакат фильма Молчание ягнят">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Молчание ягнят</div>
                                     <div class="swiper-content__description">1990, Триллер</div>
@@ -795,7 +796,7 @@
 
                         <div class="else__swiper-slide swiper-slide">
                             <div class="else__swiper-image swiper-image">
-                                <img src="Images/else/else7.jpg" alt="image">
+                                <img src="Images/else/else7.jpg" alt="плакат фильма Остров проклятых">
                                 <div class="else__swiper-content swiper-content">
                                     <div class="swiper-content__name">Остров проклятых</div>
                                     <div class="swiper-content__description">2009, Триллер</div>
@@ -817,12 +818,13 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
     <footer class="footer">
         <div class="container">
             <a href="#">
-                <img src="Images/header/logo.svg" alt="">
+                <img src="Images/header/logo.svg" alt="логотип">
             </a>
         </div>
     </footer>

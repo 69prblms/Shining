@@ -20,12 +20,12 @@
                     <a class="logo" href="#">
                         <img src="images/header/logo.svg" alt="логотип">
                     </a>
-                    <button class="burger"></button>
+                    <button class="burger" aria-label="открыть навигацию по сайту"></button>
                 </div>
                 <div class="header__icons">
-                    <button class="heart"></button>
-                    <button class="search"></button>
-                    <button class="user"></button>
+                    <button class="heart" aria-label="добавить в избранное"></button>
+                    <button class="search" aria-label="открыть поиск по сайту"></button>
+                    <button class="user" aria-label="зайти в личный кабинет"></button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     <h1 class="vh__title">title</h1>
                     <div class="hero__content-main main-content">
                         <div class="main-content__age">
-                            <img src="/images/hero/18+.svg" alt="огарничение 18+">
+                            <img src="images/hero/18+.svg" alt="огарничение 18+">
                         </div>
                         <div class="main-content__title title-content">
                             <div class="title-content__name">Сияние</div>
@@ -47,21 +47,21 @@
                             <div class="title-content__director">Стэнли Кубрик</div>
                         </div>
                         <div class="main-content__data data-content">
-                            <div class="data-content__rate">7.8</div>
-                            <div class="data-content__number">189K</div>
+                            <div class="data-content__rate" aria-label="рейтинг фильма 7.8">7.8</div>
+                            <div class="data-content__number" aria-hidden="true" >189K</div>
                             <div class="data-content__age-reserve">
-                                <img src="/Images/hero/18+.svg" alt="огарничение 18+">
+                                <img src="images/hero/18+.svg" aria-label="Лицам до 17 лет обязательно присутствие взрослого" aria-hidden="true" alt="ограничение 18+">
                             </div>
                         </div>
                     </div>
                     <picture>
-                        <source srcset="/Images/hero/hero-img.webp" type="image/webp">
+                        <source srcset="images/hero/hero-img.webp" type="image/webp">
                         <img class="hero__content-image" srcset="
                         images/hero/1736x1082.png 2x,
                         images/hero/320x250.png 320w,
                         images/hero/500x350.png 500w
                         " sizes="(max-width: 1000px) 500px, (max-width: 500px) 320px, 100vw"
-                            src="/Images/hero/868x541.png" aria-hidden="true" alt="фото Джека Торренса">
+                            src="images/hero/868x541.png" aria-hidden="true" alt="фото Джека Торренса">
                     </picture>
                     <div class="hero__content-ticket ticket">
                         <a class="ticket__link" href="">Купить билет</a>
@@ -116,27 +116,27 @@
                         </div>
 
                     </div>
-                    <ul class="about__list">
+                    <ul class="about__list" aria-hidden="true">
                         <li class="about__item item-about">
                             <div class="item-about__title">Год производства</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">1980</a>
+                                <a class="item-about__link" href="#">1980</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Страна</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">США</a>,
-                                <a class="item-about__link">Великобритания</a>
+                                <a class="item-about__link" href="#">США</a>,
+                                <a class="item-about__link" href="#">Великобритания</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Жанр</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">ужасы</a>,
-                                <a class="item-about__link">триллер</a>,
-                                <a class="item-about__link">драма</a>,
-                                <a class="item-about__link">детектив</a>
+                                <a class="item-about__link" href="#">ужасы</a>,
+                                <a class="item-about__link" href="#">триллер</a>,
+                                <a class="item-about__link" href="#">драма</a>,
+                                <a class="item-about__link" href="#">детектив</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
@@ -146,90 +146,90 @@
                         <li class="about__item item-about">
                             <div class="item-about__title">Режиссер</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Стэнли Кубрик</a>
+                                <a class="item-about__link" href="#">Стэнли Кубрик</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сценарий</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Стэнли Кубрик</a>,
-                                <a class="item-about__link">Дайан Джонсон</a>,
-                                <a class="item-about__link">Стивен Кинг</a>
+                                <a class="item-about__link" href="#">Стэнли Кубрик</a>,
+                                <a class="item-about__link" href="#">Дайан Джонсон</a>,
+                                <a class="item-about__link" href="#">Стивен Кинг</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Продюсер</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Роберт Фрайер</a>,
-                                <a class="item-about__link">Ян Харлан</a>,
-                                <a class="item-about__link">Мэри Лиа Джонсон</a>,
-                                <a class="item-about__link">Карлос Уэнди</a>
-                                <a class="item-about__link">Элкинд Томкинс</a>
+                                <a class="item-about__link" href="#">Роберт Фрайер</a>,
+                                <a class="item-about__link" href="#">Ян Харлан</a>,
+                                <a class="item-about__link" href="#">Мэри Лиа Джонсон</a>,
+                                <a class="item-about__link" href="#">Карлос Уэнди</a>
+                                <a class="item-about__link" href="#">Элкинд Томкинс</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Оператор</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Джон Олкотт</a>
+                                <a class="item-about__link" href="#">Джон Олкотт</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Композитор</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Уэнди Карлос</a>,
-                                <a class="item-about__link">Рэйчел Элкинд</a>
+                                <a class="item-about__link" href="#" >Уэнди Карлос</a>,
+                                <a class="item-about__link" href="#" >Рэйчел Элкинд</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Художник</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Рой Уолкер</a>,
-                                <a class="item-about__link">Лесли Томкинс</a>,
-                                <a class="item-about__link">Милена Канонеро</a>
+                                <a class="item-about__link" href="#" >Рой Уолкер</a>,
+                                <a class="item-about__link" href="#" >Лесли Томкинс</a>,
+                                <a class="item-about__link" href="#" >Милена Канонеро</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Монтаж</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">Рэй Лавджой</a>
+                                <a class="item-about__link" href="#" >Рэй Лавджой</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Бюджет</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" aria-label="$19000000">$19 000 000</a>
+                                <a class="item-about__link" href="#"  aria-label="$19000000">$19 000 000</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в США</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" aria-label="$440173740">$44 017 3740</a>
+                                <a class="item-about__link"  href="#" aria-label="$440173740">$44 017 3740</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в мире</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" aria-label="$44035750">+ $18 376 = $44 035 750</a>
+                                <a class="item-about__link" href="#"  aria-label="$44035750">+ $18 376 = $44 035 750</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Сборы в России</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" aria-label="$145815">$145 815</a>
+                                <a class="item-about__link" href="#"  aria-label="$145815">$145 815</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Премьера в Росcии</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">29 октября 2020</a>,
-                                <a class="item-about__link">«Иноекино»</a>
+                                <a class="item-about__link" href="#" >29 октября 2020</a>,
+                                <a class="item-about__link" href="#" >«Иноекино»</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
                             <div class="item-about__title">Премьера в мире</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link">23 мая 1980</a>,
-                                <a class="item-about__link">...</a>
+                                <a class="item-about__link" href="#">23 мая 1980</a>,
+                                <a class="item-about__link" href="#" >...</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
@@ -251,7 +251,7 @@
                         </li>
 
                     </ul>
-                    <button class="btn about__btn-more">Еще</button>
+                    <button class="btn about__btn-more" aria-label="показать всю информацию о фильме" >Еще</button>
                 </div>
 
             </div>
@@ -259,6 +259,7 @@
 
         <section class="index">
             <div class="container">
+                <h1 class="vh__title">навигация по разделам сайта</h1>
                 <ul class="index__list">
                     <li class="index__item item-menu item-menu-1">
                         <button class="item-menu__button button-menu">
@@ -379,7 +380,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-prev" aria-label="переход к следующему слайдеру"></div>
                         <div class="swiper-button-next"></div>
                     </div>
 
@@ -724,7 +725,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn facts__btn-more">Еще</button>
+                <button class="btn facts__btn-more" aria-label="показать все факты о фильме">Еще</button>
             </div>
         </section>
 

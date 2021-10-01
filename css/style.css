@@ -57,6 +57,14 @@ body {
   margin-bottom: 70px;
 }
 
+.vh__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 button {
   padding: 0;
   border: none;
@@ -103,9 +111,13 @@ button {
 }
 
 .header .burger {
-  background-image: url(/images/header/burger.svg);
   width: 34px;
   height: 14px;
+  mask-image: url(/images/header/burger.svg);
+  -webkit-mask-image: url(/images/header/burger.svg);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: #000;
 }
 
 .header .heart {
@@ -133,7 +145,6 @@ button {
 }
 
 .header .user {
-  background-image: url(/images/header/icon-user.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -146,7 +157,8 @@ button {
 
 .header .heart:hover,
 .header .search:hover,
-.header .user:hover {
+.header .user:hover,
+.header .burger:hover {
   background-color: #ff8a00;
 }
 
@@ -168,14 +180,6 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-.page .hero__content .vh__title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 .page .hero__content-main {
@@ -353,9 +357,14 @@ button {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
+.page .about .item-about {
+  font-weight: 500;
+}
+
 .page .about .item-about__title {
   width: 25%;
   min-width: 200px;
+  font-weight: 400;
 }
 
 .page .about .item-about__descr {
@@ -369,6 +378,7 @@ button {
 .page .about .item-about__link {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  color: #000;
 }
 
 .page .about .item-about__link:hover {
@@ -392,7 +402,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 50%;
+  padding-right: 90px;
 }
 
 .page .about .trailer__video-top {
@@ -404,6 +415,7 @@ button {
   display: block;
   position: relative;
   margin-bottom: 16px;
+  max-width: 240px;
 }
 
 .page .about .trailer__link-top:focus, .page .about .trailer__link-bottom:focus {
@@ -858,10 +870,11 @@ button {
 .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item {
   cursor: pointer;
   color: #8f8f8f;
+  margin-right: 50px;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:not(:last-child) {
-  margin-right: 50px;
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__time {
@@ -1274,6 +1287,7 @@ button {
             justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
+    padding-right: 0;
   }
   .page .about__list {
     width: 100%;
@@ -1311,6 +1325,20 @@ button {
     margin: 0 auto;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
+    position: relative;
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    mask-image: url(/images/about/more-arrow.svg);
+    -webkit-mask-image: url(/images/about/more-arrow.svg);
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    background-color: #fff;
+    left: 74px;
+    top: 14px;
   }
   .page .index .item-menu__button {
     padding: 20px 0;
@@ -1503,7 +1531,7 @@ button {
   }
   .page .schedule__header .schedule__forms .schedule__place .place-list__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .page .schedule__header .schedule__forms .schedule__place .place-list__select {
     width: 130px;
@@ -1517,8 +1545,11 @@ button {
   .page .schedule__header .schedule__date {
     min-width: auto;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:not(:last-child) {
+  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item {
     margin-right: 20px;
+  }
+  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:nth-child(4n) {
+    margin-right: 0;
   }
   .page .schedule__body .schedule__list .schedule__item-timing {
     width: 100%;

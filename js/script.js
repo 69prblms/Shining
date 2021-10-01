@@ -23,25 +23,6 @@ var starringSwiper = new Swiper(".starring__swiper", {
     },
 });
 
-// var swiper = new Swiper(".images__swiper-2", {
-//     loop: true,
-//     spaceBetween: 0,
-//     slidesPerView: 2,
-//     centeredSlides: true,
-//     watchSlidesProgress: true,
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
-//   var swiper2 = new Swiper(".images__swiper", {
-//     loop: true,
-//     spaceBetween: 10,
-//     thumbs: {
-//       swiper: swiper,
-//     },
-//   });
-
 
 var imagesSwiper = new Swiper(".images__swiper", {
   loop: true,

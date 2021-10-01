@@ -50,6 +50,13 @@ body {
     margin: 0;
     margin-bottom: 70px;
 }
+.vh__title {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 button {
     padding: 0;
     border: none;
@@ -90,9 +97,13 @@ button {
     }
 
     .burger {
-        background-image: url(/images/header/burger.svg);
         width: 34px;
         height: 14px;
+        mask-image: url(/images/header/burger.svg);
+        -webkit-mask-image: url(/images/header/burger.svg);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        background-color: #000;
     }
 
     .heart {
@@ -118,7 +129,6 @@ button {
         background-color: #000;
     }
     .user {
-        background-image: url(/images/header/icon-user.svg);
         background-repeat: no-repeat;
         width: 24px;
         height: 24px;
@@ -130,7 +140,8 @@ button {
     }
     .heart:hover,
     .search:hover,
-    .user:hover {
+    .user:hover,
+    .burger:hover {
         background-color: #ff8a00;
     }
 }
@@ -148,14 +159,6 @@ button {
             flex-direction: column;
             justify-content: space-between;
             position: relative;
-
-            .vh__title {
-                position: absolute;
-                clip: rect(0 0 0 0);
-                width: 1px;
-                height: 1px;
-                margin: -1px;
-            }
 
             &-main {
                 display: flex;
@@ -315,9 +318,12 @@ button {
             box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
         }
         .item-about {
+            font-weight: 500;
+
             &__title {
                 width: 25%;
                 min-width: 200px;
+                font-weight: 400;
             }
 
             &__descr {
@@ -329,6 +335,7 @@ button {
             }
             &__link {
                 transition: 0.3s ease;
+                color: #000;
             }
             &__link:hover {
                 color: #ff8a00;
@@ -342,7 +349,9 @@ button {
         &__trailer {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            // width: 40%;
+            width: 50%;
+            padding-right: 90px;
         }
         .trailer {
             &__video-top {
@@ -354,6 +363,7 @@ button {
                 display: block;
                 position: relative;
                 margin-bottom: 16px;
+                max-width: 240px;
             }
             &__link-top:focus,
             &__link-bottom:focus {
@@ -673,7 +683,6 @@ button {
                     padding-bottom: 10px;
                     font-size: 18px;
                     line-height: 21px;
-                    // min-width: 658px;
                     width: 100%;
                     cursor: pointer;
                     position: relative;
@@ -767,9 +776,10 @@ button {
                             &-item {
                                 cursor: pointer;
                                 color: #8f8f8f;
+                                margin-right: 50px;
 
-                                &:not(:last-child) {
-                                    margin-right: 50px;
+                                &:nth-child(4n) {
+                                    margin-right: 0;
                                 }
 
                                 .timing-item__time {
@@ -1178,6 +1188,7 @@ button {
         justify-content: space-between;
         width: 100%;
         margin-bottom: 30px;
+        padding-right: 0;
     }
     .page .about__list {
         width: 100%;
@@ -1209,7 +1220,22 @@ button {
         font-size: 16px;
         margin: 0 auto;
         transition: 0.3s ease;
+        position: relative;
     }
+    .btn::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        mask-image: url(/images/about/more-arrow.svg);
+        -webkit-mask-image: url(/images/about/more-arrow.svg);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        background-color: #fff;
+        left: 74px;
+        top: 14px;
+
+        }
 
     // -------index-------------
 
@@ -1407,13 +1433,9 @@ button {
 
     // -------starring-------------
 
-    // .page .starring__swiper .starring__swiper-slide {
-    //     width: 100%;
-    // }
+    
     .page .starring__swiper .swiper-button-next,
     .page .starring__swiper .swiper-button-prev {
-        // width: 50px;
-        // height: 50px;
         visibility: hidden;
     }
 
@@ -1421,8 +1443,6 @@ button {
 
     .page .images__swiper-2 .swiper-button-next,
     .page .images__swiper-2 .swiper-button-prev {
-        // width: 50px;
-        // height: 50px;
         visibility: hidden;
     }
 
@@ -1434,7 +1454,7 @@ button {
     }
     .page .schedule__header .schedule__forms .schedule__place .place-list__item:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     .page .schedule__header .schedule__forms .schedule__place .place-list__select {
@@ -1450,8 +1470,11 @@ button {
         min-width: auto;
     }
 
-    .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:not(:last-child) {
+    .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item {
         margin-right: 20px;
+    }
+    .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:nth-child(4n) {
+        margin-right: 0;
     }
     
     .page .schedule__body .schedule__list .schedule__item-timing {

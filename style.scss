@@ -252,9 +252,7 @@ button {
                 justify-content: center;
                 cursor: pointer;
             }
-                // &:hover {
-                //     background-image: url(/img/star.svg);
-                // }
+                
                 
                 .ticket__link {
                     font-size: 16px;
@@ -1257,9 +1255,8 @@ button {
     .page .about__list {
         width: 100%;
         width: 100%;
-        max-height: 200px;
+        max-height: 190px;
         overflow: auto;
-        // text-overflow: ellipsis;
         margin-bottom: 20px;
     }
     .page .about .trailer__title {

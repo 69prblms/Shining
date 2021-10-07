@@ -103,8 +103,8 @@ button {
     .burger {
         width: 34px;
         height: 14px;
-        mask-image: url(/images/header/burger.svg);
-        -webkit-mask-image: url(/images/header/burger.svg);
+        mask-image: url(/img/header/burger.svg);
+        -webkit-mask-image: url(/img/header/burger.svg);
         mask-size: contain;
         -webkit-mask-size: contain;
         background-color: #000;
@@ -114,8 +114,8 @@ button {
         background-repeat: no-repeat;
         width: 24px;
         height: 24px;
-        mask-image: url(/images/header/icon-heart.svg);
-        -webkit-mask-image: url(/images/header/icon-heart.svg);
+        mask-image: url(/img/header/icon-heart.svg);
+        -webkit-mask-image: url(/img/header/icon-heart.svg);
         mask-size: contain;
         -webkit-mask-size: contain;
         background-color: #000;
@@ -126,8 +126,8 @@ button {
         height: 24px;
         margin-right: 170px;
         margin-left: 26px;
-        mask-image: url(/images/header/icon-search.svg);
-        -webkit-mask-image: url(/images/header/icon-search.svg);
+        mask-image: url(/img/header/icon-search.svg);
+        -webkit-mask-image: url(/img/header/icon-search.svg);
         mask-size: contain;
         -webkit-mask-size: contain;
         background-color: #000;
@@ -136,8 +136,8 @@ button {
         background-repeat: no-repeat;
         width: 24px;
         height: 24px;
-        mask-image: url(/images/header/icon-user.svg);
-        -webkit-mask-image: url(/images/header/icon-user.svg);
+        mask-image: url(/img/header/icon-user.svg);
+        -webkit-mask-image: url(/img/header/icon-user.svg);
         mask-size: contain;
         -webkit-mask-size: contain;
         background-color: #000;
@@ -238,7 +238,7 @@ button {
             }
 
             &-ticket {
-                background-image: url(/images/fill-star.svg);
+                background-image: url(/img/fill-star.svg);
                 background-repeat: no-repeat;
                 width: 140px;
                 height: 140px;
@@ -253,7 +253,7 @@ button {
                 cursor: pointer;
             }
                 // &:hover {
-                //     background-image: url(/images/star.svg);
+                //     background-image: url(/img/star.svg);
                 // }
                 
                 .ticket__link {
@@ -399,7 +399,7 @@ button {
             &__link-bottom::after {
                 content: "";
                 position: absolute;
-                background-image: url(/images/about/youtube-red.svg);
+                background-image: url(/img/about/youtube-red.svg);
                 width: 50px;
                 height: 50px;
                 top: 50%;
@@ -410,7 +410,7 @@ button {
             }
             &__link-top:hover::after,
             &__link-bottom:hover::after {
-                background-image: url(/images/about/youtube-grey.svg);
+                background-image: url(/img/about/youtube-grey.svg);
             }
             &__image-top,
             &__image-bottom {
@@ -487,31 +487,31 @@ button {
         }
         .item-menu-1 .item-menu__button:hover,
         .item-menu-1 .item-menu__button:focus {
-            background-image: url(/images/index/Menu1.jpg);
+            background-image: url(/img/index/Menu1.jpg);
         }
         .item-menu-2 .item-menu__button:hover,
         .item-menu-2 .item-menu__button:focus {
-            background-image: url(/images/index/Menu2.jpg);
+            background-image: url(/img/index/Menu2.jpg);
         }
         .item-menu-3 .item-menu__button:hover,
         .item-menu-3 .item-menu__button:focus {
-            background-image: url(/images/index/Menu3.jpg);
+            background-image: url(/img/index/Menu3.jpg);
         }
         .item-menu-4 .item-menu__button:hover,
         .item-menu-4 .item-menu__button:focus {
-            background-image: url(/images/index/Menu4.jpg);
+            background-image: url(/img/index/Menu4.jpg);
         }
         .item-menu-5 .item-menu__button:hover,
         .item-menu-5 .item-menu__button:focus {
-            background-image: url(/images/index/Menu5.jpg);
+            background-image: url(/img/index/Menu5.jpg);
         }
         .item-menu-6 .item-menu__button:hover,
         .item-menu-6 .item-menu__button:focus {
-            background-image: url(/images/index/Menu6.jpg);
+            background-image: url(/img/index/Menu6.jpg);
         }
         .item-menu-7 .item-menu__button:hover,
         .item-menu-7 .item-menu__button:focus {
-            background-image: url(/images/index/Menu7.jpg);
+            background-image: url(/img/index/Menu7.jpg);
         }
 
         .item-menu .item-menu__button:hover h2,
@@ -539,13 +539,13 @@ button {
             overflow: inherit;
 
             .swiper-button-prev {
-                background: url(/images/arrow-left.svg);
+                background: url(/img/arrow-left.svg);
                 width: 140px;
                 height: 140px;
                 top: 50%;
             }
             .swiper-button-next {
-                background: url(/images/arrow-right.svg);
+                background: url(/img/arrow-right.svg);
                 width: 140px;
                 height: 140px;
             }
@@ -618,12 +618,12 @@ button {
             margin-bottom: 40px;
 
             .swiper-button-prev {
-                background: url(/images/arrow-left.svg);
+                background: url(/img/arrow-left.svg);
                 width: 140px;
                 height: 140px;
             }
             .swiper-button-next {
-                background: url(/images/arrow-right.svg);
+                background: url(/img/arrow-right.svg);
                 width: 140px;
                 height: 140px;
             }
@@ -936,13 +936,13 @@ button {
             overflow: inherit;
 
             .swiper-button-prev {
-                background: url(/images/arrow-left.svg);
+                background: url(/img/arrow-left.svg);
                 width: 140px;
                 height: 140px;
                 top: 50%;
             }
             .swiper-button-next {
-                background: url(/images/arrow-right.svg);
+                background: url(/img/arrow-right.svg);
                 width: 140px;
                 height: 140px;
             }
@@ -1291,8 +1291,8 @@ button {
         position: absolute;
         width: 10px;
         height: 10px;
-        mask-image: url(/images/about/more-arrow.svg);
-        -webkit-mask-image: url(/images/about/more-arrow.svg);
+        mask-image: url(/img/about/more-arrow.svg);
+        -webkit-mask-image: url(/img/about/more-arrow.svg);
         mask-size: contain;
         -webkit-mask-size: contain;
         background-color: #fff;

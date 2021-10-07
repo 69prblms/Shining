@@ -1,18 +1,3 @@
-// $(document).ready(function(){
-
-//     $('.tabs-triggers_item').click(function(e){
-//         e.preventDefault();
-
-//         $('.tabs-triggers_item').removeClass('tabs-triggers_item--active');
-//         $('.tabs-content_item').removeClass('tabs-content_item--active');
-
-//         $(this).addClass('tabs-triggers_item--active');
-//         $($(this).attr('href')).addClass('tabs-content_item--active');
-//     });
-//     $('.tabs-triggers_item:first').click();
-    
-    
-// });
 
 var starringSwiper = new Swiper(".starring__swiper", {
     slidesPerView: "auto",
@@ -55,13 +40,7 @@ var imagesSwiper2 = new Swiper(".images__swiper-2", {
     navigation: {
         nextEl: '.swiper-button-prev',
         prevEl: '.swiper-button-next'
-    },
-    // breakpoints: {
-    //   768: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 20,
-    //   }
-    // }
+    }
 });
 
 const aboutlist = document.querySelector ('.about__list');

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shining1980</title>
+    <title>Сияние 1980</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
         <div class="header__container">
             <div class="header__content">
                 <div class="header__icons-main">
-                    <a class="logo" href="#">
+                    <a class="logo" href="#" aria-label="логотип">
                         <img src="images/header/logo.svg" alt="логотип">
                     </a>
                     <button class="burger" aria-label="открыть навигацию по сайту"></button>
@@ -36,10 +36,10 @@
         <section class="page__hero hero">
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="vh__title">title</h1>
+                    <h1 class="vh__title">main-title</h1>
                     <div class="hero__content-main main-content">
                         <div class="main-content__age">
-                            <img src="images/hero/18+.svg" alt="огарничение 18+">
+                            <img src="images/hero/18+.svg" alt="ограничение 18+">
                         </div>
                         <div class="main-content__title title-content">
                             <div class="title-content__name">Сияние</div>
@@ -47,10 +47,12 @@
                             <div class="title-content__director">Стэнли Кубрик</div>
                         </div>
                         <div class="main-content__data data-content">
-                            <div class="data-content__rate" aria-label="рейтинг фильма 7.8">7.8</div>
-                            <div class="data-content__number" aria-hidden="true" >189K</div>
+                            <div class="data-content__rate" aria-hidden="true">7.8</div>
+                            <div class="data-content__number" aria-hidden="true">189K</div>
                             <div class="data-content__age-reserve">
-                                <img src="images/hero/18+.svg" aria-label="Лицам до 17 лет обязательно присутствие взрослого" aria-hidden="true" alt="ограничение 18+">
+                                <img src="images/hero/18+.svg"
+                                    aria-label="Лицам до 17 лет при просмотре фильма обязательно присутствие взрослого"
+                                    alt="ограничение 18+">
                             </div>
                         </div>
                     </div>
@@ -58,14 +60,15 @@
                         <source srcset="images/hero/hero-img.webp" type="image/webp">
                         <img class="hero__content-image" srcset="
                         images/hero/1736x1082.png 2x,
-                        images/hero/320x250.png 320w,
-                        images/hero/500x350.png 500w
+                        images/hero/320x250.png,
+                        images/hero/500x350.png
                         " sizes="(max-width: 1000px) 500px, (max-width: 500px) 320px, 100vw"
                             src="images/hero/868x541.png" aria-hidden="true" alt="фото Джека Торренса">
                     </picture>
                     <div class="hero__content-ticket ticket">
-                        <a class="ticket__link" href="">Купить билет</a>
+                        <a class="ticket__link" href="#" aria-label="ссылка для покупки билета">Купить билет</a>
                     </div>
+
                     <div class="hero__content-descr descr-content">
                         <div class="descr-content__premiere">Снова в кино с 30 июля </div>
                         <p class="descr-content__info">Писатель приезжает с семьей в загадочный отель. Противоречивый
@@ -100,158 +103,198 @@
                     <div class="about__trailer trailer">
 
                         <div class="trailer__video-top">
-                            <a class="trailer__link-top" href="https://www.youtube.com/embed/5GAqSMT3iR8" rel="noreferrer nofollow" target="_blank">
-                                <img class="trailer__image-top" src="images/about/video-1.jpg" alt="ссылка на первый трейлер">
+                            <a class="trailer__link-top" href="https://www.youtube.com/embed/5GAqSMT3iR8"
+                                rel="noreferrer nofollow" target="_blank" aria-label="ссылка на первый трейлер">
+                                <img class="trailer__image-top" src="images/about/video-1.jpg"
+                                    alt="ссылка на первый трейлер">
                             </a>
                             <h3 class="title trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:52</div>
                         </div>
 
                         <div class="trailer__video-bottom">
-                            <a class="trailer__link-bottom" href="https://www.youtube.com/embed/NMSUEhDWXH0" rel="noreferrer nofollow" target="_blank">
-                            <img class="trailer__image-bottom" src="images/about/video-2.jpg" alt="ссылка на второй трейлер">
+                            <a class="trailer__link-bottom" href="https://www.youtube.com/embed/NMSUEhDWXH0"
+                                rel="noreferrer nofollow" target="_blank" aria-label="ссылка на второй трейлер">
+                                <img class="trailer__image-bottom" src="images/about/video-2.jpg"
+                                    alt="ссылка на второй трейлер">
                             </a>
                             <h3 class="trailer__title">Трейлер ре-релиза фильма</h3>
                             <div class="trailer__info">1:49</div>
                         </div>
 
                     </div>
-                    <ul class="about__list" aria-hidden="true">
+                    <ul class="about__list">
                         <li class="about__item item-about">
-                            <div class="item-about__title">Год производства</div>
+                            <div class="item-about__title" aria-hidden="true">Год производства</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#" aria-hidden="true">1980 </a>
+                                <a class="item-about__link" href="#" aria-label="фильмы 1980 года">1980 </a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Страна</div>
+                            <div class="item-about__title" aria-hidden="true">Страна</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">США</a>,
-                                <a class="item-about__link" href="#">Великобритания</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы производства США">США</a>,
+                                <a class="item-about__link" href="#"
+                                    aria-label="фильмы производства Великобритания">Великобритания</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Жанр</div>
+                            <div class="item-about__title" aria-hidden="true">Жанр</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">ужасы</a>,
-                                <a class="item-about__link" href="#">триллер</a>,
-                                <a class="item-about__link" href="#">драма</a>,
-                                <a class="item-about__link" href="#">детектив</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы в жанре ужасы">ужасы</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы в жанре триллер">триллер</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы в жанре драма">драма</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы в жанре детектив">детектив</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Слоган</div>
-                            <div class="item-about__descr">«The Horror is driving him crazy»</div>
+                            <div class="item-about__title" aria-hidden="true">Слоган</div>
+                            <div class="item-about__descr">
+                                «The Horror is driving him crazy»</div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Режиссер</div>
+                            <div class="item-about__title" aria-hidden="true">Режиссер</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">Стэнли Кубрик</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы режиссера Стэнли Кубрика">Стэнли
+                                    Кубрик</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Сценарий</div>
+                            <div class="item-about__title" aria-hidden="true">Сценарий</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">Стэнли Кубрик</a>,
-                                <a class="item-about__link" href="#">Дайан Джонсон</a>,
-                                <a class="item-about__link" href="#">Стивен Кинг</a>
+                                <a class="item-about__link" href="#"
+                                    aria-label="фильмы по сценарию Стэнли Кубрика">Стэнли Кубрик</a>,
+                                <a class="item-about__link" href="#"
+                                    aria-label="фильмы по сценарию Дайана Джонсона">Дайан Джонсон</a>,
+                                <a class="item-about__link" href="#"
+                                    aria-label="фильмы по сценарию Стивена Кинга">Стивен Кинг</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Продюсер</div>
+                            <div class="item-about__title" aria-hidden="true">Продюсер</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">Роберт Фрайер</a>,
-                                <a class="item-about__link" href="#">Ян Харлан</a>,
-                                <a class="item-about__link" href="#">Мэри Лиа Джонсон</a>,
-                                <a class="item-about__link" href="#">Карлос Уэнди</a>
-                                <a class="item-about__link" href="#">Элкинд Томкинс</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы продюсера Роберт Фрайер">Роберт
+                                    Фрайер</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы продюсера Ян Харлан">Ян
+                                    Харлан</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы продюсера Мэри Лиа Джонсон">Мэри
+                                    Лиа Джонсон</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы продюсера Карлос Уэнди">Карлос
+                                    Уэнди</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы продюсера Элкинд Томкинс">Элкинд
+                                    Томкинс</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Оператор</div>
+                            <div class="item-about__title" aria-hidden="true">Оператор</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">Джон Олкотт</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы оператора Джон Олкотт">Джон
+                                    Олкотт</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Композитор</div>
+                            <div class="item-about__title" aria-hidden="true">Композитор</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#" >Уэнди Карлос</a>,
-                                <a class="item-about__link" href="#" >Рэйчел Элкинд</a>
+                                <a class="item-about__link" href="#"
+                                    aria-label="произведения композитора Уэнди Карлос">Уэнди Карлос</a>,
+                                <a class="item-about__link" href="#"
+                                    aria-label="произведения композитора Рэйчел Элкинд">Рэйчел Элкинд</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Художник</div>
+                            <div class="item-about__title" aria-hidden="true">Художник</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#" >Рой Уолкер</a>,
-                                <a class="item-about__link" href="#" >Лесли Томкинс</a>,
-                                <a class="item-about__link" href="#" >Милена Канонеро</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы художника Рой Уолкер">Рой
+                                    Уолкер</a>,
+                                <a class="item-about__link" href="#" aria-label="фильмы художника Лесли Томкинс">Лесли
+                                    Томкинс</a>,
+                                <a class="item-about__link" href="#"
+                                    aria-label="фильмы художника Милена Канонеро">Милена Канонеро</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Монтаж</div>
+                            <div class="item-about__title" aria-hidden="true">Монтаж</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#" >Рэй Лавджой</a>
+                                <a class="item-about__link" href="#" aria-label="фильмы с монтажем Рэй Лавджой">Рэй
+                                    Лавджой</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Бюджет</div>
+                            <div class="item-about__title" aria-hidden="true">Бюджет</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#"  aria-label="$19000000">$19 000 000</a>
+                                <a class="item-about__link" href="#" aria-label="Бюджет фильма $19000000">$19 000
+                                    000</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Сборы в США</div>
+                            <div class="item-about__title" aria-hidden="true">Сборы в США</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link"  href="#" aria-label="$440173740">$44 017 3740</a>
+                                <a class="item-about__link" href="#" aria-label="Сборы в США $440173740">$44 017
+                                    3740</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Сборы в мире</div>
+                            <div class="item-about__title" aria-hidden="true">Сборы в мире</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#"  aria-label="$44035750">+ $18 376 = $44 035 750</a>
+                                <a class="item-about__link" href="#" aria-label="Сборы в мире $44035750">+ $18 376 = $44
+                                    035 750</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Сборы в России</div>
+                            <div class="item-about__title" aria-hidden="true">Сборы в России</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#"  aria-label="$145815">$145 815</a>
+                                <a class="item-about__link" href="#" aria-label="Сборы в России $145815">$145 815</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Премьера в Росcии</div>
+                            <div class="item-about__title" aria-hidden="true">Премьера в Росcии</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#" >29 октября 2020</a>,
-                                <a class="item-about__link" href="#" >«Иноекино»</a>
+                                <a class="item-about__link" href="#" aria-label="Премьера в Росcии 29 октября 2020">29
+                                    октября 2020</a>,
+                                <a class="item-about__link" href="#">«Иноекино»</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Премьера в мире</div>
+                            <div class="item-about__title" aria-hidden="true">Премьера в мире</div>
                             <div class="item-about__descr">
-                                <a class="item-about__link" href="#">23 мая 1980</a>,
-                                <a class="item-about__link" href="#" >...</a>
+                                <a class="item-about__link" href="#" aria-label="Премьера в мире 23 мая 1980">23 мая
+                                    1980</a>,
+                                <a class="item-about__link" href="#">...</a>
                             </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Релиз на DVD</div>
-                            <div class="item-about__descr">25 декабря 2001, «Мост-Видео»</div>
+                            <div class="item-about__title" aria-hidden="true">Релиз на DVD</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link" href="#"
+                                    aria-label="Релиз на DVD 25 декабря 2001, «Мост-Видео»">25 декабря 2001,
+                                    «Мост-Видео»</a>
+                            </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Возраст</div>
-                            <div class="item-about__descr">18+</div>
+                            <div class="item-about__title" aria-hidden="true">Возраст</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link" href="#"
+                                    aria-label="Лицам до 17 лет при просмотре фильма обязательно присутствие взрослого">18+</a>
+                            </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title" aria-label="Ассоциация MPAA (Американская Киноассоциация, Motion Picture Association of America) является родоначальницей рейтинговой системы, помогающей родителям оценить, подходят ли те или иные фильмы для просмотра их детьми.">Рейтинг MPAA</div>
-                            <div class="item-about__descr" aria-label="Рейтинг R. Такой рейтинг получают фильмы, в содержании которых обязательно содержится материал, предназначенный только для взрослой аудитории. Родителям рекомендуется хорошо подумать, прежде чем пойти на него вместе со своими детьми.
-                            Фильм, получивший рейтинг R, скорее всего содержит сексуальные сцены, эпизоды с употреблением наркотиков, нецензурную брань, фрагменты с насилием и т.д.">R</div>
+                            <div class="item-about__title" aria-hidden="true">Рейтинг MPAA</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link" href="#"
+                                    aria-label="Рейтинг R. Такой рейтинг получают фильмы, в содержании которых обязательно содержится материал, предназначенный только для взрослой аудитории. Родителям рекомендуется хорошо подумать, прежде чем пойти на него вместе со своими детьми.
+                            Фильм, получивший рейтинг R, скорее всего содержит сексуальные сцены, эпизоды с употреблением наркотиков, нецензурную брань, фрагменты с насилием и т.д.">R</a>
+                            </div>
                         </li>
                         <li class="about__item item-about">
-                            <div class="item-about__title">Время</div>
-                            <div class="item-about__descr">144 мин. / 02:24</div>
+                            <div class="item-about__title" aria-hidden="true">Время</div>
+                            <div class="item-about__descr">
+                                <a class="item-about__link" href="#"
+                                    aria-label="продолжительсность фильма 144 минуты">144 мин. / 02:24</a>
+                            </div>
                         </li>
 
                     </ul>
-                    <button class="btn about__btn-more" aria-label="показать всю информацию о фильме" >Еще</button>
+                    <button class="btn about__btn-more" aria-label="показать всю информацию о фильме">Еще</button>
                 </div>
 
             </div>
@@ -259,48 +302,48 @@
 
         <section class="index">
             <div class="container">
-                <h1 class="vh__title">навигация по разделам сайта</h1>
+                <h4 class="vh__title">навигация по разделам сайта</h4>
                 <ul class="index__list">
                     <li class="index__item item-menu item-menu-1">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">01</div>
-                            <h2 class="title button-menu__title">В главных ролях</h2>
+                            <h4 class="title button-menu__title">В главных ролях</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-2">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">02</div>
-                            <h2 class="title button-menu__title">Изображения</h2>
+                            <h4 class="title button-menu__title">Изображения</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-3">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">03</div>
-                            <h2 class="title button-menu__title">Расписание</h2>
+                            <h4 class="title button-menu__title">Расписание</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-4">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">04</div>
-                            <h2 class="title button-menu__title">Интересные факты</h2>
+                            <h4 class="title button-menu__title">Интересные факты</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-5">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">05</div>
-                            <h2 class="title button-menu__title">Премьеры</h2>
+                            <h4 class="title button-menu__title">Премьеры</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-6">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">06</div>
-                            <h2 class="title button-menu__title">Студии</h2>
+                            <h4 class="title button-menu__title">Студии</h4>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-7">
                         <button class="item-menu__button button-menu">
                             <div class="button-menu__number">07</div>
-                            <h2 class="title button-menu__title">Саундтреки</h2>
+                            <h4 class="title button-menu__title">Саундтреки</h4>
                         </button>
                     </li>
                 </ul>
@@ -353,7 +396,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring5.jpg" alt="фото Филип Стоун">
+                                    <img src="images/starring/Starring5.jpg" alt="фото Филип Стоун">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Филип Стоун</div>
                                         <div class="swiper-content__name-eng">Philip Stone</div>
@@ -362,7 +405,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring6.jpg" alt="фото Джо Тёркел">
+                                    <img src="images/starring/Starring6.jpg" alt="фото Джо Тёркел">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Джо Тёркел</div>
                                         <div class="swiper-content__name-eng">Joe Turkel</div>
@@ -371,7 +414,7 @@
                             </div>
                             <div class="swiper-slide starring__swiper-slide">
                                 <div class="swiper-image starring__swiper-image">
-                                    <img src="Images/starring/Starring7.jpg" alt="фото Мэннинг Редвуд">
+                                    <img src="images/starring/Starring7.jpg" alt="фото Мэннинг Редвуд">
                                     <div class="starring__swiper-content swiper-content">
                                         <div class="swiper-content__name">Мэннинг Редвуд</div>
                                         <div class="swiper-content__name-eng">Manning Redwood</div>
@@ -380,7 +423,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-button-prev" aria-label="переход к следующему слайдеру"></div>
+                        <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
 
@@ -400,43 +443,43 @@
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images1.jpg" alt="кадр из фильма">
+                            <img src="images/images/images1.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images2.jpg" alt="кадр из фильма">
+                            <img src="images/images/images2.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images3.jpg" alt="кадр из фильма">
+                            <img src="images/images/images3.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images4.jpg" alt="кадр из фильма">
+                            <img src="images/images/images4.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images5.jpg" alt="кадр из фильма">
+                            <img src="images/images/images5.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images6.jpg" alt="кадр из фильма">
+                            <img src="images/images/images6.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
                     <div class="swiper-slide images__swiper-2-slide">
                         <div class="images-image images__swiper-2-image">
-                            <img src="Images/images/images7.jpg" alt="кадр из фильма">
+                            <img src="images/images/images7.jpg" alt="кадр из фильма">
                         </div>
                     </div>
 
@@ -449,32 +492,32 @@
 
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min1.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min1.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min2.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min2.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min3.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min3.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min4.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min4.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min5.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min5.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                     <div class="images__swiper-slide swiper-slide">
                         <div class="images-image images__swiper-image">
-                            <img src="Images/images/images-min6.jpg" alt="кадр из фильма">
+                            <img src="images/images/images-min6.jpg" alt="кадр из фильма">
                         </div>
                     </div>
                 </div>
@@ -490,49 +533,49 @@
                         <h2 class="title schedule__title">Расписание</h2>
                         <div class="schedule__calendar">
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link" aria-current="page">
+                                <a href="" class="calendar-item__link" aria-label="сегодня 30 сентября">
                                     <div class="calendar-item__day">Сегодня</div>
                                     <div class="calendar-item__number">30</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="Завтра 1 октября">
                                     <div class="calendar-item__day">Завтра</div>
                                     <div class="calendar-item__number">1</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="суббота 2 октября">
                                     <div class="calendar-item__day">сб</div>
                                     <div class="calendar-item__number">2</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="воскресенье 3 октября">
                                     <div class="calendar-item__day">вс</div>
                                     <div class="calendar-item__number">3</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="понедельник 4 октября">
                                     <div class="calendar-item__day">пн</div>
                                     <div class="calendar-item__number">4</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="вторник 5 октября">
                                     <div class="calendar-item__day">вт</div>
                                     <div class="calendar-item__number">5</div>
                                 </a>
                             </div>
 
                             <div class="schedule__calendar-item calendar-item">
-                                <a href="" class="calendar-item__link">
+                                <a href="" class="calendar-item__link" aria-label="среда 6 октября">
                                     <div class="calendar-item__day">ср</div>
                                     <div class="calendar-item__number">6</div>
                                 </a>
@@ -540,8 +583,9 @@
                         </div>
                     </div>
                     <div class="schedule__forms">
-                        <select class="schedule__city" aria-haspopup="true" aria-expanded="false">
-                            <option selected style="display: none;">Москва</option>
+
+                        <select class="schedule__city" aria-label="выберите город">
+                            <option selected>Москва</option>
                             <option>Зеленоград</option>
                             <option>Красногорск</option>
                             <option>Лобня</option>
@@ -552,68 +596,98 @@
                             <div class="schedule__place-title">Сортировка сеансов</div>
                             <ul class="schedule__place-list place-list">
                                 <li class="place-list__item">
-                                    <select class="place-list__select" name="cinema">
+                                    <select class="place-list__select" name="cinema"
+                                        aria-label="отсортируйте список по названию кинотеатра">
                                         <option style="display: none;">Кинотеатр </option>
-                                        <option>Киномакс Водный</option>
+                                        <option>Киномакс Водный </option>
                                         <option>Синема Парк Химки</option>
                                         <option>Киносфера</option>
                                         <option>Синема Парк DELUXE ТЦ «Метрополис»</option>
                                     </select>
                                 </li>
-                                <li class="place-list__item">Время</li>
-                                <li class="place-list__item">Метро</li>
+                                <li class="place-list__item">
+                                    <a class="place-list__link" href="#"
+                                        aria-label="отсортируйте список по времени сеанса">Время</a>
+                                </li>
+                                <li class="place-list__item">
+                                    <a class="place-list__link" href="#"
+                                        aria-label="отсортируйте список по близости кинотеатра к метро">Метро</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="schedule__body">
-                    <ul class="schedule__list">
-
-                        <li class="schedule__item">
-                            <div class="schedule__item-cinema cinema">
+                <div class="schedule__body" id="sorting-cinemas">
+                    <h4 class="vh__title">список кинотеатров и доступные сеансы</h4>
+                    <ul class="schedule__list" role="listbox" aria-label="список кинотеатров и доступные">
+                        <li class="schedule__item" role="none">
+                            <h4 class="vh__title">Киномакс Водный</h4>
+                            <div class="schedule__item-cinema cinema" role="listitem">
                                 <div class="cinema__title">Киномакс Водный</div>
                                 <div class="cinema__address">Головинское шоссе, 5, ТЦ «Водный»</div>
                             </div>
                             <div class="schedule__item-timing timing">
                                 <ul class="timing__wrapper">
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">15:50</div>
-                                        <div class="timing-item__price">от 250 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 15:50, стоимость билета от 250 рублей">
+                                            <div class="timing-item__time">15:50</div>
+                                            <div class="timing-item__price">от 250 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">19:10</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 19:10, стоимость билета от 600 рублей">
+                                            <div class="timing-item__time">19:10</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">22:10</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 22:10, стоимость билета от 800 рублей">
+                                            <div class="timing-item__time">22:10</div>
+                                            <div class="timing-item__price">от 800 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">23:50</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 23:50, стоимость билета от 600 рублей">
+                                            <div class="timing-item__time">23:50</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="schedule__item">
-                            <div class="schedule__item-cinema cinema">
+                        <li class="schedule__item" role="none">
+                            <h4 class="vh__title">Синема Парк DELUXE ТЦ «Метрополис»</h4>
+                            <div class="schedule__item-cinema cinema" role="listitem">
                                 <div class="cinema__title">Синема Парк DELUXE ТЦ «Метрополис»</div>
                                 <div class="cinema__address">Ленинградское шоссе, 16а, ТЦ «Метрополис»</div>
                             </div>
                             <div class="schedule__item-timing timing">
                                 <ul class="timing__wrapper">
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">09:20</div>
-                                        <div class="timing-item__price">от 200 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 09:20, стоимость билета от 200 рублей">
+                                            <div class="timing-item__time">09:20</div>
+                                            <div class="timing-item__price">от 200 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">14:40</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 14:40, стоимость билета от 600 рублей">
+                                            <div class="timing-item__time">14:40</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">18:00</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <button class="timing-item__btn"
+                                            aria-label="начало сеанса 18:00, стоимость билета от 800 рублей">
+                                            <div class="timing-item__time">18:00</div>
+                                            <div class="timing-item__price">от 800 Р</div>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
@@ -627,12 +701,16 @@
                             <div class="schedule__item-timing timing">
                                 <ul class="timing__wrapper">
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">11:10</div>
-                                        <div class="timing-item__price">от 300 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">11:10</div>
+                                            <div class="timing-item__price">от 300 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">20:40</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">20:40</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
@@ -647,20 +725,28 @@
                             <div class="schedule__item-timing timing">
                                 <ul class="timing__wrapper">
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">13:00</div>
-                                        <div class="timing-item__price">от 350 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">13:00</div>
+                                            <div class="timing-item__price">от 350 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">16:10</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">16:10</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">18:50</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">18:50</div>
+                                            <div class="timing-item__price">от 800 Р</div>
+                                        </button>
                                     </li>
                                     <li class="timing__wrapper-item timing-item">
-                                        <div class="timing-item__time">21:00</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <button class="timing-item__btn">
+                                            <div class="timing-item__time">21:00</div>
+                                            <div class="timing-item__price">от 600 Р</div>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
@@ -678,14 +764,14 @@
                     <div class="facts__left">
 
                         <div class="facts__left-top top-left">
-                            <img src="Images/facts/facts1.jpg" alt="кадр из фильма «Голова-ластик»">
+                            <img src="images/facts/facts1.jpg" alt="кадр из фильма «Голова-ластик»">
                             <div class="top-left__decription">Чтобы погрузить съемочную группу в необходимое
                                 психологическое
                                 состояние, Кубрик показывал им фильм «Голова-ластик» (1977).
                             </div>
                         </div>
                         <div class="facts__left-bottom bottom-left">
-                            <img src="Images/facts/facts3.jpg" alt="кадр из фильма">
+                            <img src="images/facts/facts3.jpg" alt="кадр из фильма">
                             <div class="bottom-left__decription">Как и в книге, в сценарии была сцена, в которой Джек
                                 находит
                                 альбом с газетными вырезками об отеле. По неизвестным причинам эта сцена так и не была
@@ -701,11 +787,14 @@
                     </div>
                     <div class="facts__right">
                         <div class="facts__right-top top-right">
-                            <img src="Images/facts/facts2.jpg" alt="фото Джека Николсона">
+                            <img src="images/facts/facts2.jpg" alt="фото Джека Николсона">
                             <div class="top-right__decription">Стивен Кинг пытался отговорить Кубрика приглашать на
                                 главную роль
-                                Джека Николсона и предлагал взамен взять <a class="top-right__link">Джона Войта</a> или
-                                <a class="top-right__link">Майкла Мориарти</a>. В
+                                Джека Николсона и предлагал взамен взять <a href="#" class="top-right__link"
+                                    aria-label="ссылка на страницу о Джоне Войта">Джона
+                                    Войта</a> или
+                                <a href="#" class="top-right__link"
+                                    aria-label="ссылка на страницу о Майкле Мориарти">Майкла Мориарти</a>. В
                                 качестве аргумента он
                                 приводил свое убеждение в том, что зрителю гораздо интереснее будет наблюдать за
                                 постепенным
@@ -715,7 +804,7 @@
                             </div>
                         </div>
                         <div class="facts__right-bottom bottom-right">
-                            <img src="Images/facts/facts4.jpg" alt="кадр с видами гор, леса и реки">
+                            <img src="images/facts/facts4.jpg" alt="кадр с видами гор, леса и реки">
                             <div class="bottom-right__decription">Концовка оригинальной версии фильма Ридли Скотта
                                 «Бегущий по
                                 лезвию» содержит кадры с панорамными пролётами над горами — эти кадры были сняты для
@@ -806,10 +895,11 @@
                         </div>
 
                         <div class="else__swiper-slide else__swiper-slide-last swiper-slide">
-                            <div class="else__swiper-content swiper-content else__swiper-content-last">
+                            <a href="" class="else__swiper-content swiper-content else__swiper-content-last"
+                                aria-label="показать все 12 похожих фильмов">
                                 <div class="swiper-content__name swiper-content__name-last">12</div>
                                 <div class="swiper-content__description swiper-content__description-last">всего</div>
-                            </div>
+                            </a>
 
                         </div>
 
@@ -825,23 +915,10 @@
     <footer class="footer">
         <div class="container">
             <a href="#">
-                <img src="Images/header/logo.svg" alt="логотип">
+                <img src="images/header/logo.svg" alt="логотип">
             </a>
         </div>
     </footer>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script type="text/javascript">
-        $('.schedule_menu-item_select').change(function () {
-            var text = $(this).find('option:selected').text()
-            var $aux = $('<select/>').append($('<option/>').text(text))
-            $(this).after($aux)
-            $(this).width($aux.width())
-            $aux.remove()
-        }).change()
-        </script> -->
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

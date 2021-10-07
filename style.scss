@@ -94,6 +94,10 @@ button {
     .logo {
         margin-right: 16px;
         margin-left: -6px;
+
+        &:focus {
+            outline: 2px solid #ff8a00;
+        }
     }
 
     .burger {
@@ -138,10 +142,18 @@ button {
         -webkit-mask-size: contain;
         background-color: #000;
     }
+    .burger:hover,
     .heart:hover,
     .search:hover,
-    .user:hover,
-    .burger:hover {
+    .user:hover {
+        background-color: #ff8a00;
+    }
+
+    .burger:focus,
+    .heart:focus,
+    .search:focus,
+    .user:focus {
+        outline: none;
         background-color: #ff8a00;
     }
 }
@@ -226,7 +238,7 @@ button {
             }
 
             &-ticket {
-                background-image: url(../images/fill-star.svg);
+                background-image: url(/images/fill-star.svg);
                 background-repeat: no-repeat;
                 width: 140px;
                 height: 140px;
@@ -238,14 +250,23 @@ button {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                cursor: pointer;
+            }
+                // &:hover {
+                //     background-image: url(/images/star.svg);
+                // }
+                
                 .ticket__link {
                     font-size: 16px;
                     line-height: 19px;
                     color: #ffffff;
                     max-width: 80px;
                     text-align: center;
-                }
+
+                    &:focus {
+                        outline: 2px solid #fff;
+                    } 
+               
             }
 
             &-descr {
@@ -306,7 +327,7 @@ button {
             justify-content: space-between;
 
             &:not(:last-child) {
-                margin-bottom: 16px;
+                margin-bottom: 10px;
             }
         }
         &__btn-more {
@@ -332,13 +353,17 @@ button {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+                padding: 3px 0;
+                padding-left: 3px;
             }
             &__link {
-                transition: 0.3s ease;
                 color: #000;
             }
             &__link:hover {
                 color: #ff8a00;
+            }
+            &__link:focus {
+                outline: #ff8a00 2px solid;
             }
         }
 
@@ -441,7 +466,6 @@ button {
 
                 &:focus {
                     outline: none;
-                    // outline: 3px solid #ff8a00;
                 }
 
                 .button-menu {
@@ -649,6 +673,7 @@ button {
 
                                 &:focus {
                                     outline: #ff8a00 3px solid;
+                                    
                                 }
                             }
                             &__day {
@@ -678,7 +703,6 @@ button {
                 width: 50%;
                 .schedule__city {
                     border: none;
-                    outline: none;
                     border-bottom: 1px solid #8f8f8f;
                     padding-bottom: 10px;
                     font-size: 18px;
@@ -719,10 +743,19 @@ button {
                             &:hover {
                                 color: #000000;
                             }
+                            &:focus {
+                                outline: 3px #ff8a00 solid;
+                            }
+                        }
+                        &__link {
+                            color: #ff8a00;
+                        }
+                        &__link:focus {
+                            outline: 3px #ff8a00 solid;
+                            color: #000;
                         }
                         &__select {
                             border: none;
-                            outline: none;
                             width: 116px;
                             cursor: pointer;
                             text-overflow: ellipsis;
@@ -778,32 +811,43 @@ button {
                                 color: #8f8f8f;
                                 margin-right: 50px;
 
+                                
                                 &:nth-child(4n) {
                                     margin-right: 0;
                                 }
-
-                                .timing-item__time {
-                                    font-size: 32px;
-                                    line-height: 32px;
-                                    margin-bottom: 11px;
-                                    transition: 0.3s;
-
-                                    &:hover {
-                                        color: #ff8a00;
+                            }
+                            .timing-item {
+                                    &__btn {
+                                        text-align: start;
+                                        &:focus {
+                                            color: #ff8a00;
+                                            outline: none;
+                                        }
                                     }
-                                }
-                                .timing-item__price {
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    color: #575757;
-                                }
+                                    &__time {
+                                        font-size: 32px;
+                                        line-height: 32px;
+                                        margin-bottom: 11px;
+                                        transition: 0.3s;
+
+                                        &:hover {
+                                            color: #ff8a00;
+                                        }
+                                    }
+                                    &__price {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        color: #575757;
+                                    }
+
+                            }
                             }
                         }
                     }
                 }
             }
         }
-    }
+    
 
     // ---------------------- facts----------------------
 
@@ -853,6 +897,11 @@ button {
                 &__link {
                     color: #ff8a00;
                     cursor: pointer;
+
+                    &:focus {
+                        outline: 2px solid #ff8a00;
+                        color: #000;
+                    }
                 }
             }
 
@@ -935,10 +984,23 @@ button {
                 width: 304px;
                 height: 458px;
                 transition: 0.3s ease;
-                cursor: pointer;
+                position: relative;
 
                 .else__swiper-content-last {
+                    display: block;
                     color: #8f8f8f;
+                    outline: none;
+                }
+                .else__swiper-content-last::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+                .else__swiper-content-last:focus::after {
+                    outline: 3px solid #ff8a00;
                 }
                 .swiper-content__name-last {
                     font-size: 36px;
@@ -950,10 +1012,12 @@ button {
                     transition: 0.3s ease;
                 }
 
-                &:hover {
+                &:hover,
+                &:focus {
                     background-color: #f8e600;
                 }
-                &:hover div {
+                &:hover div,
+                &:focus div {
                     color: #ffffff;
                 }
             }
@@ -1433,10 +1497,22 @@ button {
 
     // -------starring-------------
 
-    
+    .page .starring__container {
+        padding: 0 20px;
+    }
+    .page .starring__swiper .swiper-content__name {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .page .starring__swiper .starring__swiper-image img {
+        margin-bottom: 20px;
+    }
     .page .starring__swiper .swiper-button-next,
     .page .starring__swiper .swiper-button-prev {
         visibility: hidden;
+    }
+    .page .starring__swiper .starring__swiper-slide {
+        max-width: 250px;
     }
 
     // -------images-------------
@@ -1491,8 +1567,8 @@ button {
         font-size: 12px;
     }
     .page .schedule__body .schedule__list .schedule__item-cinema .cinema__title {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
     }
     .page .schedule__body .schedule__list .schedule__item-cinema {
         margin-bottom: 20px;
@@ -1500,11 +1576,21 @@ button {
 
     // -------else-------------
     
+    .page .else__container {
+        padding: 0 20px;
+    }
+    .page .else__swiper-image img {
+        margin-bottom: 20px;
+    }
+    .page .else__swiper-content .swiper-content__name {
+        margin-bottom: 4px;
+    }
+
     .page .else__swiper .swiper-button-next,
     .page .else__swiper .swiper-button-prev {
-        // width: 50px;
-        // height: 50px;
         visibility: hidden;
     }
-    
+    .page .else__swiper-slide {
+        max-width: 250px;
+    }
 }

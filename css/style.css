@@ -110,6 +110,10 @@ button {
   margin-left: -6px;
 }
 
+.header .logo:focus {
+  outline: 2px solid #ff8a00;
+}
+
 .header .burger {
   width: 34px;
   height: 14px;
@@ -155,10 +159,18 @@ button {
   background-color: #000;
 }
 
+.header .burger:hover,
 .header .heart:hover,
 .header .search:hover,
-.header .user:hover,
-.header .burger:hover {
+.header .user:hover {
+  background-color: #ff8a00;
+}
+
+.header .burger:focus,
+.header .heart:focus,
+.header .search:focus,
+.header .user:focus {
+  outline: none;
   background-color: #ff8a00;
 }
 
@@ -249,7 +261,7 @@ button {
 }
 
 .page .hero__content-ticket {
-  background-image: url(../images/fill-star.svg);
+  background-image: url(/images/fill-star.svg);
   background-repeat: no-repeat;
   width: 140px;
   height: 140px;
@@ -267,14 +279,19 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
-.page .hero__content-ticket .ticket__link {
+.page .hero__content .ticket__link {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
   max-width: 80px;
   text-align: center;
+}
+
+.page .hero__content .ticket__link:focus {
+  outline: 2px solid #fff;
 }
 
 .page .hero__content-descr {
@@ -345,7 +362,7 @@ button {
 }
 
 .page .about__item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .page .about__btn-more {
@@ -373,16 +390,20 @@ button {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  padding: 3px 0;
+  padding-left: 3px;
 }
 
 .page .about .item-about__link {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
   color: #000;
 }
 
 .page .about .item-about__link:hover {
   color: #ff8a00;
+}
+
+.page .about .item-about__link:focus {
+  outline: #ff8a00 2px solid;
 }
 
 .page .about__content {
@@ -759,7 +780,6 @@ button {
 
 .page .schedule__header .schedule__forms .schedule__city {
   border: none;
-  outline: none;
   border-bottom: 1px solid #8f8f8f;
   padding-bottom: 10px;
   font-size: 18px;
@@ -809,9 +829,21 @@ button {
   color: #000000;
 }
 
+.page .schedule__header .schedule__forms .schedule__place .place-list__item:focus {
+  outline: 3px #ff8a00 solid;
+}
+
+.page .schedule__header .schedule__forms .schedule__place .place-list__link {
+  color: #ff8a00;
+}
+
+.page .schedule__header .schedule__forms .schedule__place .place-list__link:focus {
+  outline: 3px #ff8a00 solid;
+  color: #000;
+}
+
 .page .schedule__header .schedule__forms .schedule__place .place-list__select {
   border: none;
-  outline: none;
   width: 116px;
   cursor: pointer;
   text-overflow: ellipsis;
@@ -877,7 +909,16 @@ button {
   margin-right: 0;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__time {
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__btn {
+  text-align: start;
+}
+
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__btn:focus {
+  color: #ff8a00;
+  outline: none;
+}
+
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__time {
   font-size: 32px;
   line-height: 32px;
   margin-bottom: 11px;
@@ -885,11 +926,11 @@ button {
   transition: 0.3s;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__time:hover {
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__time:hover {
   color: #ff8a00;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__price {
+.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__price {
   font-size: 14px;
   line-height: 18px;
   color: #575757;
@@ -952,6 +993,11 @@ button {
 .page .facts__right .top-right__link {
   color: #ff8a00;
   cursor: pointer;
+}
+
+.page .facts__right .top-right__link:focus {
+  outline: 2px solid #ff8a00;
+  color: #000;
 }
 
 .page .facts__right-bottom .bottom-right__decription {
@@ -1039,11 +1085,26 @@ button {
   height: 458px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  cursor: pointer;
+  position: relative;
 }
 
 .page .else__swiper-slide-last .else__swiper-content-last {
+  display: block;
   color: #8f8f8f;
+  outline: none;
+}
+
+.page .else__swiper-slide-last .else__swiper-content-last::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.page .else__swiper-slide-last .else__swiper-content-last:focus::after {
+  outline: 3px solid #ff8a00;
 }
 
 .page .else__swiper-slide-last .swiper-content__name-last {
@@ -1059,11 +1120,12 @@ button {
   transition: 0.3s ease;
 }
 
-.page .else__swiper-slide-last:hover {
+.page .else__swiper-slide-last:hover, .page .else__swiper-slide-last:focus {
   background-color: #f8e600;
 }
 
-.page .else__swiper-slide-last:hover div {
+.page .else__swiper-slide-last:hover div,
+.page .else__swiper-slide-last:focus div {
   color: #ffffff;
 }
 
@@ -1514,9 +1576,22 @@ button {
     min-width: 40px;
     font-size: 16px;
   }
+  .page .starring__container {
+    padding: 0 20px;
+  }
+  .page .starring__swiper .swiper-content__name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .page .starring__swiper .starring__swiper-image img {
+    margin-bottom: 20px;
+  }
   .page .starring__swiper .swiper-button-next,
   .page .starring__swiper .swiper-button-prev {
     visibility: hidden;
+  }
+  .page .starring__swiper .starring__swiper-slide {
+    max-width: 250px;
   }
   .page .images__swiper-2 .swiper-button-next,
   .page .images__swiper-2 .swiper-button-prev {
@@ -1566,15 +1641,27 @@ button {
     font-size: 12px;
   }
   .page .schedule__body .schedule__list .schedule__item-cinema .cinema__title {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .page .schedule__body .schedule__list .schedule__item-cinema {
     margin-bottom: 20px;
   }
+  .page .else__container {
+    padding: 0 20px;
+  }
+  .page .else__swiper-image img {
+    margin-bottom: 20px;
+  }
+  .page .else__swiper-content .swiper-content__name {
+    margin-bottom: 4px;
+  }
   .page .else__swiper .swiper-button-next,
   .page .else__swiper .swiper-button-prev {
     visibility: hidden;
+  }
+  .page .else__swiper-slide {
+    max-width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

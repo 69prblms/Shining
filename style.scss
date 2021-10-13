@@ -790,19 +790,21 @@ button {
                             line-height: 38px;
                             text-transform: capitalize;
                             margin-bottom: 6px;
+                            font-weight: 400;
                         }
                         .cinema__address {
                             font-size: 14px;
                             line-height: 18px;
                             color: #8f8f8f;
+                            font-weight: 400;
                         }
                     }
 
-                    &-timing {
-                        width: 50%;
-
+                    
+                        
                         .timing__wrapper {
                             display: flex;
+                            width: 50%;
 
                             &-item {
                                 cursor: pointer;
@@ -840,7 +842,7 @@ button {
 
                             }
                             }
-                        }
+                        
                     }
                 }
             }

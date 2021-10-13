@@ -881,44 +881,43 @@ button {
   line-height: 38px;
   text-transform: capitalize;
   margin-bottom: 6px;
+  font-weight: 400;
 }
 
 .page .schedule__body .schedule__list .schedule__item-cinema .cinema__address {
   font-size: 14px;
   line-height: 18px;
   color: #8f8f8f;
+  font-weight: 400;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing {
-  width: 50%;
-}
-
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper-item {
   cursor: pointer;
   color: #8f8f8f;
   margin-right: 50px;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:nth-child(4n) {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__btn {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__btn {
   text-align: start;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__btn:focus {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__btn:focus {
   color: #ff8a00;
   outline: none;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__time {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__time {
   font-size: 32px;
   line-height: 32px;
   margin-bottom: 11px;
@@ -926,11 +925,11 @@ button {
   transition: 0.3s;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__time:hover {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__time:hover {
   color: #ff8a00;
 }
 
-.page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper .timing-item__price {
+.page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__price {
   font-size: 14px;
   line-height: 18px;
   color: #575757;

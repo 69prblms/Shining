@@ -1619,24 +1619,24 @@ button {
   .page .schedule__header .schedule__date {
     min-width: auto;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item {
+  .page .schedule__body .schedule__list .schedule__item .timing__wrapper-item {
     margin-right: 20px;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item:nth-child(4n) {
+  .page .schedule__body .schedule__list .schedule__item .timing__wrapper-item:nth-child(4n) {
     margin-right: 0;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing {
+  .page .schedule__body .schedule__list {
     width: 100%;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper {
+  .page .schedule__body .schedule__list .timing__wrapper-item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__time {
+  .page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__time {
     font-size: 22px;
     line-height: 20px;
   }
-  .page .schedule__body .schedule__list .schedule__item-timing .timing__wrapper-item .timing-item__price {
+  .page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__price {
     font-size: 12px;
   }
   .page .schedule__body .schedule__list .schedule__item-cinema .cinema__title {

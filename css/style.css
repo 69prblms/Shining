@@ -117,8 +117,8 @@ button {
 .header .burger {
   width: 34px;
   height: 14px;
-  mask-image: url(/img/header/burger.svg);
-  -webkit-mask-image: url(/img/header/burger.svg);
+  mask-image: url(../img/header/burger.svg);
+  -webkit-mask-image: url(../img/header/burger.svg);
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #000;
@@ -128,8 +128,8 @@ button {
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
-  mask-image: url(/img/header/icon-heart.svg);
-  -webkit-mask-image: url(/img/header/icon-heart.svg);
+  mask-image: url(../img/header/icon-heart.svg);
+  -webkit-mask-image: url(../img/header/icon-heart.svg);
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #000;
@@ -141,8 +141,8 @@ button {
   height: 24px;
   margin-right: 170px;
   margin-left: 26px;
-  mask-image: url(/img/header/icon-search.svg);
-  -webkit-mask-image: url(/img/header/icon-search.svg);
+  mask-image: url(../img/header/icon-search.svg);
+  -webkit-mask-image: url(../img/header/icon-search.svg);
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #000;
@@ -152,8 +152,8 @@ button {
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
-  mask-image: url(/img/header/icon-user.svg);
-  -webkit-mask-image: url(/img/header/icon-user.svg);
+  mask-image: url(../img/header/icon-user.svg);
+  -webkit-mask-image: url(../img/header/icon-user.svg);
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #000;
@@ -261,7 +261,7 @@ button {
 }
 
 .page .hero__content-ticket {
-  background-image: url(/img/fill-star.svg);
+  background-image: url(../img/fill-star.svg);
   background-repeat: no-repeat;
   width: 140px;
   height: 140px;
@@ -447,7 +447,7 @@ button {
 .page .about .trailer__link-top::after, .page .about .trailer__link-bottom::after {
   content: "";
   position: absolute;
-  background-image: url(/img/about/youtube-red.svg);
+  background-image: url(../img/about/youtube-red.svg);
   width: 50px;
   height: 50px;
   top: 50%;
@@ -459,7 +459,7 @@ button {
 }
 
 .page .about .trailer__link-top:hover::after, .page .about .trailer__link-bottom:hover::after {
-  background-image: url(/img/about/youtube-grey.svg);
+  background-image: url(../img/about/youtube-grey.svg);
 }
 
 .page .about .trailer__image-top, .page .about .trailer__image-bottom {
@@ -543,37 +543,37 @@ button {
 
 .page .index .item-menu-1 .item-menu__button:hover,
 .page .index .item-menu-1 .item-menu__button:focus {
-  background-image: url(/img/index/Menu1.jpg);
+  background-image: url(../img/index/Menu1.jpg);
 }
 
 .page .index .item-menu-2 .item-menu__button:hover,
 .page .index .item-menu-2 .item-menu__button:focus {
-  background-image: url(/img/index/Menu2.jpg);
+  background-image: url(../img/index/Menu2.jpg);
 }
 
 .page .index .item-menu-3 .item-menu__button:hover,
 .page .index .item-menu-3 .item-menu__button:focus {
-  background-image: url(/img/index/Menu3.jpg);
+  background-image: url(../img/index/Menu3.jpg);
 }
 
 .page .index .item-menu-4 .item-menu__button:hover,
 .page .index .item-menu-4 .item-menu__button:focus {
-  background-image: url(/img/index/Menu4.jpg);
+  background-image: url(../img/index/Menu4.jpg);
 }
 
 .page .index .item-menu-5 .item-menu__button:hover,
 .page .index .item-menu-5 .item-menu__button:focus {
-  background-image: url(/img/index/Menu5.jpg);
+  background-image: url(../img/index/Menu5.jpg);
 }
 
 .page .index .item-menu-6 .item-menu__button:hover,
 .page .index .item-menu-6 .item-menu__button:focus {
-  background-image: url(/img/index/Menu6.jpg);
+  background-image: url(../img/index/Menu6.jpg);
 }
 
 .page .index .item-menu-7 .item-menu__button:hover,
 .page .index .item-menu-7 .item-menu__button:focus {
-  background-image: url(/img/index/Menu7.jpg);
+  background-image: url(../img/index/Menu7.jpg);
 }
 
 .page .index .item-menu .item-menu__button:hover h2,
@@ -600,14 +600,14 @@ button {
 }
 
 .page .starring__swiper .swiper-button-prev {
-  background: url(/img/arrow-left.svg);
+  background: url(../img/arrow-left.svg);
   width: 140px;
   height: 140px;
   top: 50%;
 }
 
 .page .starring__swiper .swiper-button-next {
-  background: url(/img/arrow-right.svg);
+  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
 }
@@ -689,13 +689,13 @@ button {
 }
 
 .page .images__swiper-2 .swiper-button-prev {
-  background: url(/img/arrow-left.svg);
+  background: url(../img/arrow-left.svg);
   width: 140px;
   height: 140px;
 }
 
 .page .images__swiper-2 .swiper-button-next {
-  background: url(/img/arrow-right.svg);
+  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
 }
@@ -1029,14 +1029,14 @@ button {
 }
 
 .page .else__swiper .swiper-button-prev {
-  background: url(/img/arrow-left.svg);
+  background: url(../img/arrow-left.svg);
   width: 140px;
   height: 140px;
   top: 50%;
 }
 
 .page .else__swiper .swiper-button-next {
-  background: url(/img/arrow-right.svg);
+  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
 }
@@ -1394,8 +1394,8 @@ button {
     position: absolute;
     width: 10px;
     height: 10px;
-    mask-image: url(/img/about/more-arrow.svg);
-    -webkit-mask-image: url(/img/about/more-arrow.svg);
+    mask-image: url(../img/about/more-arrow.svg);
+    -webkit-mask-image: url(../img/about/more-arrow.svg);
     mask-size: contain;
     -webkit-mask-size: contain;
     background-color: #fff;

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сияние 1980</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -56,15 +56,42 @@
                             </div>
                         </div>
                     </div>
-                    <picture>
+
+                    <!-- <picture>
                         <source srcset="img/hero/hero-img.webp" type="image/webp">
-                        <img class="hero__content-image" srcset="
+
+                        <img class="hero__content-image" 
+                        
+                        srcset="
                         img/hero/1736x1082.png 2x,
                         img/hero/320x250.png,
-                        img/hero/500x350.png
-                        " sizes="(max-width: 1000px) 500px, (max-width: 500px) 320px, 100vw" src="img/hero/868x541.png"
-                            aria-hidden="true" alt="фото Джека Торренса">
-                    </picture>
+                        img/hero/500x350.png" 
+
+                        sizes="(max-width: 1000px) 500px, 
+                        (max-width: 500px) 320px, 100vw"
+
+                        src="img/hero/868x541.png" alt="фото Джека Торренса">
+                    </picture> -->
+
+
+                    <picture>
+                        <source srcset="./img/hero/hero-img.webp" type="image/webp" >
+                        <source 
+                          srcset="./img/hero/1736x1082.png"
+                          media="(min-width: 2000px)"
+                        />
+                        <source 
+                          srcset="./img/hero/500x350.png"
+                          media="(min-width: 500px)"
+                        />
+
+                        <img class="hero__content-image"
+                          src="./img/hero/868x541.png" 
+                          alt="фото Джека Торренса"
+                        />
+                      </picture>
+
+
                     <div class="hero__content-ticket ticket">
                         <a class="ticket__link" href="#" aria-label="ссылка для покупки билета">Купить билет</a>
                     </div>
@@ -306,44 +333,44 @@
                 <ul class="index__list">
                     <li class="index__item item-menu item-menu-1">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">01</div>
-                            <h3 class="title button-menu__title">В главных ролях</h3>
+                            <span class="button-menu__number">01</span>
+                            <span class="title button-menu__title">В главных ролях</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-2">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">02</div>
-                            <h3 class="title button-menu__title">Изображения</h3>
+                            <span class="button-menu__number">02</span>
+                            <span class="title button-menu__title">Изображения</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-3">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">03</div>
-                            <h3 class="title button-menu__title">Расписание</h3>
+                            <span class="button-menu__number">03</span>
+                            <span class="title button-menu__title">Расписание</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-4">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">04</div>
-                            <h3 class="title button-menu__title">Интересные факты</h3>
+                            <span class="button-menu__number">04</span>
+                            <span class="title button-menu__title">Интересные факты</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-5">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">05</div>
-                            <h3 class="title button-menu__title">Премьеры</h3>
+                            <span class="button-menu__number">05</span>
+                            <span class="title button-menu__title">Премьеры</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-6">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">06</div>
-                            <h3 class="title button-menu__title">Студии</h3>
+                            <span class="button-menu__number">06</span>
+                            <span class="title button-menu__title">Студии</span>
                         </button>
                     </li>
                     <li class="index__item item-menu item-menu-7">
                         <button class="item-menu__button button-menu">
-                            <div class="button-menu__number">07</div>
-                            <h3 class="title button-menu__title">Саундтреки</h3>
+                            <span class="button-menu__number">07</span>
+                            <span class="title button-menu__title">Саундтреки</span>
                         </button>
                     </li>
                 </ul>
@@ -616,40 +643,40 @@
                     </div>
                 </div>
                 <div class="schedule__body" id="sorting-cinemas">
-                    <ul class="schedule__list" role="listbox" aria-label="список кинотеатров и доступные">
+                    <ul class="schedule__list" aria-label="список кинотеатров и доступные">
                         <li class="schedule__item" role="none">
-                            <h3 class="schedule__item-cinema cinema" role="listitem" id="kinomaks-Vodniy">
-                                <div class="cinema__title">Киномакс Водный</div>
-                                <div class="cinema__address">Головинское шоссе, 5, ТЦ «Водный»</div>
+                            <h3 class="schedule__item-cinema cinema" id="kinomaks-Vodniy">
+                                <span class="cinema__title">Киномакс Водный</span>
+                                <span class="cinema__address">Головинское шоссе, 5, ТЦ «Водный»</span>
                             </h3>
 
                             <ul class="timing__wrapper" aria-labelledby="kinomaks-Vodniy">
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 15:50, стоимость билета от 250 рублей">
-                                        <div class="timing-item__time">15:50</div>
-                                        <div class="timing-item__price">от 250 Р</div>
+                                        <span class="timing-item__time">15:50</span>
+                                        <span class="timing-item__price">от 250 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 19:10, стоимость билета от 600 рублей">
-                                        <div class="timing-item__time">19:10</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <span class="timing-item__time">19:10</span>
+                                        <span class="timing-item__price">от 600 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 22:10, стоимость билета от 800 рублей">
-                                        <div class="timing-item__time">22:10</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <span class="timing-item__time">22:10</span>
+                                        <span class="timing-item__price">от 800 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 23:50, стоимость билета от 600 рублей">
-                                        <div class="timing-item__time">23:50</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <span class="timing-item__time">23:50</span>
+                                        <span class="timing-item__price">от 600 Р</span>
                                     </button>
                                 </li>
                             </ul>
@@ -657,30 +684,30 @@
                         </li>
 
                         <li class="schedule__item" role="none">
-                            <h3 class="schedule__item-cinema cinema" role="listitem" id="cinema-park-Metropolis">
-                                <div class="cinema__title">Синема Парк DELUXE ТЦ «Метрополис»</div>
-                                <div class="cinema__address">Ленинградское шоссе, 16а, ТЦ «Метрополис»</div>
+                            <h3 class="schedule__item-cinema cinema" id="cinema-park-Metropolis">
+                                <span class="cinema__title">Синема Парк DELUXE ТЦ «Метрополис»</span>
+                                <span class="cinema__address">Ленинградское шоссе, 16а, ТЦ «Метрополис»</span>
                             </h3>
                             <ul class="timing__wrapper" aria-labelledby="cinema-park-Metropolis">
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 09:20, стоимость билета от 200 рублей">
-                                        <div class="timing-item__time">09:20</div>
-                                        <div class="timing-item__price">от 200 Р</div>
+                                        <span class="timing-item__time">09:20</span>
+                                        <span class="timing-item__price">от 200 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 14:40, стоимость билета от 600 рублей">
-                                        <div class="timing-item__time">14:40</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <span class="timing-item__time">14:40</span>
+                                        <span class="timing-item__price">от 600 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn"
                                         aria-label="начало сеанса 18:00, стоимость билета от 800 рублей">
-                                        <div class="timing-item__time">18:00</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <span class="timing-item__time">18:00</span>
+                                        <span class="timing-item__price">от 800 Р</span>
                                     </button>
                                 </li>
                             </ul>
@@ -688,57 +715,57 @@
                         </li>
 
                         <li class="schedule__item">
-                            <h3 class="schedule__item-cinema cinema" role="listitem" id="cinema-park-Khimki">
-                                <div class="cinema__title">Синема Парк Химки</div>
-                                <div class="cinema__address">Ленинградское шоссе, 5 км., ТРЦ «Мега Химки»</div>
+                            <h3 class="schedule__item-cinema cinema" id="cinema-park-Khimki">
+                                <span class="cinema__title">Синема Парк Химки</span>
+                                <span class="cinema__address">Ленинградское шоссе, 5 км., ТРЦ «Мега Химки»</span>
                             </h3>
-                                <ul class="timing__wrapper" aria-labelledby="cinema-park-Khimki">
-                                    <li class="timing__wrapper-item timing-item">
-                                        <button class="timing-item__btn">
-                                            <div class="timing-item__time">11:10</div>
-                                            <div class="timing-item__price">от 300 Р</div>
-                                        </button>
-                                    </li>
-                                    <li class="timing__wrapper-item timing-item">
-                                        <button class="timing-item__btn">
-                                            <div class="timing-item__time">20:40</div>
-                                            <div class="timing-item__price">от 600 Р</div>
-                                        </button>
-                                    </li>
-                                </ul>
-                            
+                            <ul class="timing__wrapper" aria-labelledby="cinema-park-Khimki">
+                                <li class="timing__wrapper-item timing-item">
+                                    <button class="timing-item__btn">
+                                        <span class="timing-item__time">11:10</span>
+                                        <span class="timing-item__price">от 300 Р</span>
+                                    </button>
+                                </li>
+                                <li class="timing__wrapper-item timing-item">
+                                    <button class="timing-item__btn">
+                                        <span class="timing-item__time">20:40</span>
+                                        <span class="timing-item__price">от 600 Р</span>
+                                    </button>
+                                </li>
+                            </ul>
+
                         </li>
 
                         <li class="schedule__item">
-                            <h3 class="schedule__item-cinema cinema" role="listitem" id="kinosphera">
-                                <div class="cinema__title">Киносфера</div>
-                                <div class="cinema__address">ул. Правобережная, 1б, ТРЦ «Капитолий
-                                    Ленинградский»</div>
+                            <h3 class="schedule__item-cinema cinema" id="kinosphera">
+                                <span class="cinema__title">Киносфера</span>
+                                <span class="cinema__address">ул. Правобережная, 1б, ТРЦ «Капитолий
+                                    Ленинградский»</span>
                             </h3>
 
                             <ul class="timing__wrapper" aria-labelledby="kinosphera">
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn">
-                                        <div class="timing-item__time">13:00</div>
-                                        <div class="timing-item__price">от 350 Р</div>
+                                        <span class="timing-item__time">13:00</span>
+                                        <span class="timing-item__price">от 350 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn">
-                                        <div class="timing-item__time">16:10</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <span class="timing-item__time">16:10</span>
+                                        <span class="timing-item__price">от 600 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn">
-                                        <div class="timing-item__time">18:50</div>
-                                        <div class="timing-item__price">от 800 Р</div>
+                                        <span class="timing-item__time">18:50</span>
+                                        <span class="timing-item__price">от 800 Р</span>
                                     </button>
                                 </li>
                                 <li class="timing__wrapper-item timing-item">
                                     <button class="timing-item__btn">
-                                        <div class="timing-item__time">21:00</div>
-                                        <div class="timing-item__price">от 600 Р</div>
+                                        <span class="timing-item__time">21:00</span>
+                                        <span class="timing-item__price">от 600 Р</span>
                                     </button>
                                 </li>
                             </ul>

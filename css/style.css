@@ -49,20 +49,20 @@ body {
 }
 
 .title {
+  margin: 0;
+  margin-bottom: 70px;
   font-weight: 600;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 70px;
 }
 
 .vh__title {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 button {
@@ -81,10 +81,6 @@ button {
 }
 
 .header__content {
-  max-width: 1320px;
-  min-height: 140px;
-  padding: 0 60px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,20 +90,24 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 60px;
+  margin: 0 auto;
+  max-width: 1320px;
+  min-height: 140px;
 }
 
 .header__icons-main {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .logo {
-  margin-right: 16px;
   margin-left: -6px;
+  margin-right: 16px;
 }
 
 .header .logo:focus {
@@ -125,7 +125,6 @@ button {
 }
 
 .header .heart {
-  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   mask-image: url(../img/header/icon-heart.svg);
@@ -136,11 +135,10 @@ button {
 }
 
 .header .search {
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
   margin-right: 170px;
   margin-left: 26px;
+  width: 24px;
+  height: 24px;
   mask-image: url(../img/header/icon-search.svg);
   -webkit-mask-image: url(../img/header/icon-search.svg);
   mask-size: contain;
@@ -149,7 +147,6 @@ button {
 }
 
 .header .user {
-  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   mask-image: url(../img/header/icon-user.svg);
@@ -181,6 +178,7 @@ button {
 }
 
 .page .hero__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,18 +189,17 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .page .hero__content-main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 2;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
-  position: relative;
-  z-index: 2;
 }
 
 .page .hero__content-main .main-content__age {
@@ -221,10 +218,10 @@ button {
 }
 
 .page .hero__content-main .main-content__title .title-content__director {
+  margin-left: 160px;
   font-size: 14px;
   line-height: 18px;
   text-transform: capitalize;
-  margin-left: 160px;
 }
 
 .page .hero__content-main .main-content__data {
@@ -261,15 +258,9 @@ button {
 }
 
 .page .hero__content-ticket {
-  background-image: url(../img/fill-star.svg);
-  background-repeat: no-repeat;
-  width: 140px;
-  height: 140px;
   position: absolute;
   bottom: 44%;
   left: 4%;
-  border: none;
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,14 +270,20 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/fill-star.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .page .hero__content .ticket__link {
+  max-width: 80px;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  max-width: 80px;
   text-align: center;
 }
 
@@ -304,17 +301,17 @@ button {
 }
 
 .page .hero__content-descr .descr-content__premiere {
+  max-width: 172px;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  max-width: 172px;
 }
 
 .page .hero__content-descr .descr-content__info {
-  font-size: 18px;
-  line-height: 24px;
   max-width: 326px;
   margin: 0;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .page .about {
@@ -340,11 +337,11 @@ button {
 }
 
 .page .about__subtitle {
-  font-size: 18px;
-  line-height: 28px;
-  max-width: 665px;
   margin-left: auto;
   margin-bottom: 80px;
+  max-width: 665px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .page .about__list {
@@ -385,13 +382,13 @@ button {
 }
 
 .page .about .item-about__descr {
+  padding: 3px 0;
+  padding-left: 3px;
   width: 75%;
   cursor: pointer;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 3px 0;
-  padding-left: 3px;
 }
 
 .page .about .item-about__link {
@@ -423,8 +420,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
   padding-right: 90px;
+  width: 50%;
 }
 
 .page .about .trailer__video-top {
@@ -433,8 +430,8 @@ button {
 }
 
 .page .about .trailer__link-top, .page .about .trailer__link-bottom {
-  display: block;
   position: relative;
+  display: block;
   margin-bottom: 16px;
   max-width: 240px;
 }
@@ -447,15 +444,15 @@ button {
 .page .about .trailer__link-top::after, .page .about .trailer__link-bottom::after {
   content: "";
   position: absolute;
-  background-image: url(../img/about/youtube-red.svg);
-  width: 50px;
-  height: 50px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/about/youtube-red.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .page .about .trailer__link-top:hover::after, .page .about .trailer__link-bottom:hover::after {
@@ -467,12 +464,12 @@ button {
 }
 
 .page .about .trailer__title {
+  margin: 0;
+  margin-bottom: 10px;
+  max-width: 240px;
   font-size: 24px;
   line-height: 30px;
   text-transform: none;
-  max-width: 240px;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .page .about .trailer__info {
@@ -482,8 +479,8 @@ button {
 }
 
 .page .about .trailer__video-bottom {
-  margin-left: auto;
   position: relative;
+  margin-left: auto;
 }
 
 .page .about .height-auto__about {
@@ -510,14 +507,14 @@ button {
 }
 
 .page .index .item-menu__button {
-  padding: 30px 0;
-  padding-left: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 0;
+  padding-left: 32px;
   width: 100%;
   cursor: pointer;
 }
@@ -527,11 +524,11 @@ button {
 }
 
 .page .index .item-menu__button .button-menu__number {
+  width: 25%;
+  min-width: 100px;
   font-size: 14px;
   line-height: 18px;
   color: #575757;
-  width: 25%;
-  min-width: 100px;
   text-align: start;
 }
 
@@ -576,10 +573,8 @@ button {
   background-image: url(../img/index/Menu7.jpg);
 }
 
-.page .index .item-menu .item-menu__button:hover h2,
-.page .index .item-menu .item-menu__button:hover div,
-.page .index .item-menu .item-menu__button:focus h2,
-.page .index .item-menu .item-menu__button:focus div {
+.page .index .item-menu .item-menu__button:hover span,
+.page .index .item-menu .item-menu__button:focus span {
   color: #fff;
 }
 
@@ -589,10 +584,10 @@ button {
 }
 
 .page .starring__container {
-  width: 100%;
-  max-width: 1320px;
   margin: 0 auto;
   padding: 0 60px;
+  width: 100%;
+  max-width: 1320px;
 }
 
 .page .starring__swiper {
@@ -600,16 +595,16 @@ button {
 }
 
 .page .starring__swiper .swiper-button-prev {
-  background: url(../img/arrow-left.svg);
+  top: 50%;
   width: 140px;
   height: 140px;
-  top: 50%;
+  background: url(../img/arrow-left.svg);
 }
 
 .page .starring__swiper .swiper-button-next {
-  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
+  background: url(../img/arrow-right.svg);
 }
 
 .page .starring__swiper .swiper-button-prev:after,
@@ -663,18 +658,18 @@ button {
 }
 
 .page .images__menu {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #8f8f8f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8f8f8f;
 }
 
 .page .images__link {
+  margin-right: 50px;
   font-size: 18px;
   line-height: 21px;
   color: #ff8a00;
-  margin-right: 50px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -689,15 +684,15 @@ button {
 }
 
 .page .images__swiper-2 .swiper-button-prev {
-  background: url(../img/arrow-left.svg);
   width: 140px;
   height: 140px;
+  background: url(../img/arrow-left.svg);
 }
 
 .page .images__swiper-2 .swiper-button-next {
-  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
+  background: url(../img/arrow-right.svg);
 }
 
 .page .images__swiper-2 .swiper-button-prev:after,
@@ -754,20 +749,20 @@ button {
 }
 
 .page .schedule__header .schedule__date .schedule__calendar-item .calendar-item__day {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
   color: #8f8f8f;
   text-transform: capitalize;
-  margin-bottom: 10px;
 }
 
 .page .schedule__header .schedule__date .schedule__calendar-item .calendar-item__number {
   font-size: 18px;
   line-height: 28px;
   color: #ff8a00;
+  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .page .schedule__header .schedule__date .schedule__calendar-item .calendar-item__number:hover {
@@ -779,15 +774,15 @@ button {
 }
 
 .page .schedule__header .schedule__forms .schedule__city {
-  border: none;
-  border-bottom: 1px solid #8f8f8f;
-  padding-bottom: 10px;
-  font-size: 18px;
-  line-height: 21px;
-  width: 100%;
-  cursor: pointer;
   position: relative;
   margin-bottom: 75px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  border-bottom: 1px solid #8f8f8f;
+  cursor: pointer;
 }
 
 .page .schedule__header .schedule__forms .schedule__city:focus {
@@ -816,9 +811,9 @@ button {
   font-size: 18px;
   line-height: 28px;
   color: #ff8a00;
+  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .page .schedule__header .schedule__forms .schedule__place .place-list__item:not(:last-child) {
@@ -843,12 +838,12 @@ button {
 }
 
 .page .schedule__header .schedule__forms .schedule__place .place-list__select {
-  border: none;
   width: 116px;
-  cursor: pointer;
+  border: none;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .page .schedule__header .schedule__forms .schedule__place .place-list__select:focus {
@@ -877,11 +872,12 @@ button {
 }
 
 .page .schedule__body .schedule__list .schedule__item-cinema .cinema__title {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 400;
   font-size: 28px;
   line-height: 38px;
   text-transform: capitalize;
-  margin-bottom: 6px;
-  font-weight: 400;
 }
 
 .page .schedule__body .schedule__list .schedule__item-cinema .cinema__address {
@@ -899,9 +895,9 @@ button {
 }
 
 .page .schedule__body .schedule__list .schedule__item .timing__wrapper-item {
+  margin-right: 50px;
   cursor: pointer;
   color: #8f8f8f;
-  margin-right: 50px;
 }
 
 .page .schedule__body .schedule__list .schedule__item .timing__wrapper-item:nth-child(4n) {
@@ -918,9 +914,10 @@ button {
 }
 
 .page .schedule__body .schedule__list .schedule__item .timing__wrapper .timing-item__time {
+  display: block;
+  margin-bottom: 11px;
   font-size: 32px;
   line-height: 32px;
-  margin-bottom: 11px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1017,10 +1014,10 @@ button {
 }
 
 .page .else__container {
-  width: 100%;
-  max-width: 1320px;
   margin: 0 auto;
   padding: 0 60px;
+  width: 100%;
+  max-width: 1320px;
 }
 
 .page .else__swiper {
@@ -1028,16 +1025,16 @@ button {
 }
 
 .page .else__swiper .swiper-button-prev {
-  background: url(../img/arrow-left.svg);
-  width: 140px;
   height: 140px;
   top: 50%;
+  width: 140px;
+  background: url(../img/arrow-left.svg);
 }
 
 .page .else__swiper .swiper-button-next {
-  background: url(../img/arrow-right.svg);
   width: 140px;
   height: 140px;
+  background: url(../img/arrow-right.svg);
 }
 
 .page .else__swiper .swiper-button-prev:after,
@@ -1069,6 +1066,7 @@ button {
 }
 
 .page .else__swiper-slide-last {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,13 +1076,12 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  background-color: #f7f7f7;
   width: 304px;
   height: 458px;
+  text-align: center;
+  background-color: #f7f7f7;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  position: relative;
 }
 
 .page .else__swiper-slide-last .else__swiper-content-last {
@@ -1094,7 +1091,7 @@ button {
 }
 
 .page .else__swiper-slide-last .else__swiper-content-last::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1107,8 +1104,8 @@ button {
 }
 
 .page .else__swiper-slide-last .swiper-content__name-last {
-  font-size: 36px;
   margin-bottom: 10px;
+  font-size: 36px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -1148,8 +1145,8 @@ button {
 
 @media (max-width: 1024px) {
   .title {
-    font-size: 34px;
     margin-bottom: 50px;
+    font-size: 34px;
   }
   .page .about,
   .page .index,
@@ -1175,9 +1172,9 @@ button {
     line-height: 40px;
   }
   .page .about__subtitle {
-    max-width: 100%;
     margin-left: 0;
     margin-bottom: 50px;
+    max-width: 100%;
   }
   .page .about .trailer__video-top {
     margin-top: 0;
@@ -1221,10 +1218,10 @@ button {
             flex-direction: column;
   }
   .page .schedule__body .schedule__list .schedule__item-cinema {
+    padding-right: 0;
     margin-bottom: 30px;
     width: 100%;
     min-width: 100%;
-    padding-right: 0;
   }
   .page .schedule__body .schedule__list .schedule__item {
     padding-top: 20px;
@@ -1346,16 +1343,15 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
     margin-bottom: 30px;
     padding-right: 0;
+    width: 100%;
   }
   .page .about__list {
-    width: 100%;
+    margin-bottom: 20px;
     width: 100%;
     max-height: 190px;
     overflow: auto;
-    margin-bottom: 20px;
   }
   .page .about .trailer__title {
     font-size: 20px;
@@ -1365,11 +1361,8 @@ button {
     width: 100%;
   }
   .page .btn {
-    display: block;
+    position: relative;
     color: white;
-    background: #ff8a00;
-    border: 1px solid #ff8a00;
-    border-radius: 6%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1379,18 +1372,22 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
     padding: 20px;
     width: 100px;
     height: 20px;
+    background: #ff8a00;
+    border: 1px solid #ff8a00;
+    border-radius: 6%;
     font-size: 16px;
-    margin: 0 auto;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
-    position: relative;
   }
   .btn::after {
-    content: '';
+    content: "";
     position: absolute;
+    left: 74px;
+    top: 14px;
     width: 10px;
     height: 10px;
     mask-image: url(../img/about/more-arrow.svg);
@@ -1398,11 +1395,9 @@ button {
     mask-size: contain;
     -webkit-mask-size: contain;
     background-color: #fff;
-    left: 74px;
-    top: 14px;
   }
   .page .index .item-menu__button {
-    padding: 20px 0;
+    padding: 20px 10px;
   }
   .page .index .item-menu__button .button-menu__title {
     font-size: 32px;
@@ -1451,13 +1446,13 @@ button {
     background-size: cover;
   }
   .page .facts__content {
+    margin-bottom: 20px;
     max-height: 230px;
     overflow: auto;
-    margin-bottom: 20px;
   }
   .footer {
-    min-height: 100px;
     padding: 25px 20px;
+    min-height: 100px;
   }
 }
 
@@ -1466,8 +1461,8 @@ button {
     padding: 0 20px;
   }
   .title {
-    font-size: 28px;
     margin-bottom: 30px;
+    font-size: 28px;
   }
   .header__content {
     padding: 0 20px;
@@ -1509,9 +1504,9 @@ button {
     height: 80px;
   }
   .page .hero__content-ticket .ticket__link {
+    max-width: 70px;
     font-size: 12px;
     line-height: 16px;
-    max-width: 70px;
   }
   .page .hero__content-descr {
     margin-top: 20px;
@@ -1530,9 +1525,9 @@ button {
             flex-direction: column;
   }
   .page .about__title {
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 10px;
   }
   .page .about__subtitle {
     margin-bottom: 30px;
@@ -1540,10 +1535,10 @@ button {
     line-height: 22px;
   }
   .page .about .item-about__title {
-    width: 100%;
-    font-size: 18px;
-    font-weight: 600;
     margin-bottom: 10px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
   }
   .page .about__trailer {
     -webkit-box-orient: vertical;

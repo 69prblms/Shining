@@ -487,6 +487,30 @@ button {
   max-height: unset;
 }
 
+.page .about .tooltip {
+  position: relative;
+}
+
+.page .about .marker {
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.page .about .popup {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  font-size: 12px;
+  opacity: 0;
+  color: #8f8f8f;
+}
+
+.page .about .marker:hover + .popup,
+.page .about .marker:focus + .popup {
+  opacity: 1;
+}
+
 .page .index {
   padding-bottom: 130px;
 }

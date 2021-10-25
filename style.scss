@@ -427,6 +427,26 @@ button {
         .height-auto__about {
             max-height: unset;
         }
+        .tooltip {
+            position: relative;
+        }
+        .marker {
+            border: 1px solid #000;
+            border-radius: 2px;
+            padding: 1px;
+        }
+        .popup {
+            position: absolute;
+            top: 5px;
+            left: 30px;
+            font-size: 12px;
+            opacity: 0;
+            color: #8f8f8f;
+        }
+        .marker:hover + .popup,
+        .marker:focus + .popup {
+            opacity: 1;
+        }
     }
 
     // ---------------------- index ----------------------
